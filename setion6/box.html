@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .box{
+      border: 15px solid red;
+      width: 500px;
+      height: 500px;
+      background-color: gray;
+      margin: 50px;
+      /* 패딩을 늘릴수록 전체 박스 사이즈가 늘어난다 전체 박스는 패딩+보딩+컨텐츠가 사이즈가 됨*/
+      padding: 100px;
+    }
+
+    .box2{
+      border: 15px solid red;
+      width: 500px;
+      height: 500px;
+      background-color: gray;
+      margin: 100px;
+      padding: 100px;
+    }
+
+    .box-inner{
+      width: 50%;
+      height: 50%;
+      background-color: coral;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="box-inner"></div>
+  </div>
+  <div class="box2"></div>
+  <!-- 위에 두 박스의 마진이 어떻게 떨어지는지 확인하기 -->
+  <div class="box"></div>
+</body>
+</html>

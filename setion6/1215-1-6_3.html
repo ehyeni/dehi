@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>keat</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    /* 박스의 사이즈를 퍼센트로 지정했을때 부모 요소, 브라우저의 영향을 받는다 곧 블록요소는 바디의 크기에 영향을 받는다 */
+    .box{
+      width: 300px;
+      height: 100px;
+      background-color: blue;
+    }
+
+    .box2{
+      width: 50%;
+      height: 100px;
+      background-color: green;
+    }
+
+    .box3{
+      width: 50%;
+      height: 50%;
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="box3"></div>
+  </div>
+  <div class="box2">BOX-2</div>
+</body>
+</html>
