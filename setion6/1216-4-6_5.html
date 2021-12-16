@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>keat</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .box{
+      width: 200px;
+      height: 150px;
+      border: 10px solid #9e9e9e;
+      margin: 10px;
+      padding: 30px;
+    }
+    /* 박스 2와 3은 결과물이 같지만 2는 계산해서 넣어서 각 속성의 크기가 직관적으로 보이고 
+    3은 전체 크기에 맞춰 패딩과 보더가 들어가기 때문에 지정하기 편함 
+    3처럼 지정했을때 각각으 길이는 웹에서 개발자 도구에서 확인가능 */
+    .box2{
+      background-color: green;
+      padding: 30px;
+      border: 15px solid black;
+      width: 410px;
+      height: 410px;
+    }
+
+    .box3{
+      background-color: green;
+      padding: 30px;
+      border: 15px solid black;
+      width: 500px;
+      height: 500px;
+
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>TITLE-1</h2>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+  </div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+</body>
+</html>

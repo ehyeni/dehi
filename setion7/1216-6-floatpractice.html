@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 플러트가 없으면 원래 한줄씩 차지하는 블록 속성인데 플러트 레프트를 지정해줘서 다른 박스 옆에 붙게됨 인라인마냥*/
+    .box1{
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+      float: left;
+    }
+
+    .box2{
+      width: 100px;
+      height: 100px;
+      background-color: lightgreen;
+      float: left;
+    }
+
+    .box3{
+      width: 100px;
+      height: 100px;
+      background-color: lightsalmon;
+      float: left;
+    }
+
+    /* 위 방식과 아래 방식은 결과는 같지만 아래 방식이 더 구조적이고 깔끔한 방법임 반복 카테는 반복하여 묶기 */
+    .box{
+      width: 100px;
+      height: 100px;
+      float: left;
+    }
+
+    .color-salmon{
+      background-color: lightsalmon;
+    }
+
+    .color-green{
+      background-color: lightgreen;
+    }
+
+    .color-coral{
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+
+  <!-- 클래스를 두개 적용해야할때 아래처럼 나열하면 구동 됨-->
+  <div class="box color-coral"></div>
+  <div class="box color-green"></div>
+  <div class="box color-salmon"></div>
+<body>
+</html>
