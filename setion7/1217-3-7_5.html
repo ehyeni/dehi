@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>keat</title>
+  <style>
+    /* 배너랑 로그인에 보더를 더해서 크기가 늘어났지만
+    컨테이너의 사이즈를 조절 하지 않고 박스사이징을 넣어 배너 로그인 사이즈를 맞춤
+    컨테이너를 배너와 로그인에 맞추려면 1089*124로 늘려야함*/
+    .benner{
+      width: 740px;
+      height: 120px;
+      float: left;
+      background-color: burlywood;
+      border: 2px solid black;
+      box-sizing: border-box;
+    }
+    .login{
+      width: 333px;
+      height: 120px;
+      float: left;
+      background-color: beige;
+      margin-left: 8px;
+      border: 2px solid black;
+      box-sizing: border-box;
+    }
+    .container{
+        width: 1081px;
+        height: 120px;
+        background-color: gray;
+        margin: 0 auto;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="benner">배너 영역</div>
+    <div class="login">로그인</div>
+  </div>
+</body>
+</html>
