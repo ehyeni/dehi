@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>후손 선택자, 자손 선택자</title>
+  <style>
+    /* 꺽세로 이어주면 자손 개념임 자손 개념이 후손개념보다 더 좁은 개념이기 때문에 태그의 힘이 더 셈 */
+    div>h1{
+      background-color: blue;
+    }
+    /* 띄어쓰기로 이어주면 자손뿐만아니라 그 손자의 손자의 손자 등의 후손 개념 */
+    div h1{
+      background-color: blue;
+    }
+
+    div span {
+      background-color: yellow;
+    }
+
+    div>span{
+      border: 4px solid blue;
+    }
+  </style>
+</head>
+<body>
+  <!-- div>h$*2+div>ul>li*3{menu$} -->
+  <div>
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+    <div>
+      <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <!-- 여기 들어가는 스펜은 디브의 자손이아닌 li의 자손이기 때문에
+        위에 div>span(꺽세는 자손) 선택자가 안먹힌걸 알 수 있음 -->
+        <li><span>menu3</span></li>
+      </ul>
+    </div>
+    <h2>제목2</h2>
+    <span>span</span>
+  </div>
+  <!--정답: div>h1+h2+div>ul>li*2+li>span^^^h2+span 그치만 이렇게 까진 복잡하게 안한답니다 -->
+</body>
+</html>
