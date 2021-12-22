@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버튼 만들기</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    .container{
+      width: 750px;
+      height: 50px;
+      margin: 0 auto;
+    }
+
+    .container>li{
+      width: 150px;
+      height: 50px;
+      float: left;
+      text-align: center;
+      line-height: 50px;
+      box-sizing: border-box;
+      background-color: #18ffff;
+      color: gray;
+    }
+
+    .container>li:hover{
+      border: tomato solid 2px;
+      /* 실행해서 반응을 보면 보더 영역만큼 글씨가 밀려남 */
+    }
+
+  </style>
+</head>
+<body>
+  <ul class="container">
+    <li>메뉴1</li>
+    <li>메뉴2</li>
+    <li>메뉴3</li>
+    <li>메뉴4</li>
+    <li>메뉴5</li>
+  </ul>
+</body>
+</html>
