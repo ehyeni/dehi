@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>투명도 차이</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    h1,h2{
+      width: 300px;  /*넓이*/ 
+      line-height: 300px;  /*줄 간격*/ 
+      height: 300px;  /*높이*/ 
+      text-align: center;  /*글자 가운데 정렬*/ 
+      font-size: 30px;  /*글자 크기*/ 
+      margin: 20px;  /*바깥쪽 여백 공통 적용*/ 
+      border: 4px solid black;  /*테두리 스타일*/ 
+      float: left;  /*왼쪽 기준 정렬*/ 
+    }
+
+    .box1{
+      background-color: #1732ff;  /*배경 색상 hex 코드*/ 
+      opacity: 0.5;  /*박스 전체의 투명도 50%*/ 
+    }
+
+    .box2{
+      background-color: rgba(20, 50, 250, 0.5);   /*배경 색상 rgba 색상 코드, 투명도 50%*/ 
+    }
+  </style>
+</head>
+<body>
+  <h1 class="box1">opacity</h1>
+  <h1 class="box2">alpha</h1>
+</body>
+</html>

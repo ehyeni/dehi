@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그라디언트</title>
+  <style>
+
+    /* 선형 그라디언트 */
+    .box1{
+      margin: 20px;
+      width: 300px;
+      height: 200px;
+      background: linear-gradient(45deg, #398235, #ffffff);
+    }
+
+    /* 색상 중지점 사용 */
+    .box2{
+      margin: 20px;
+      width: 300px;
+      height: 200px;
+      background: linear-gradient(45deg, #398235 0%, #ffffff 51%, #c9de96 100%);
+      /* 그라디언트 - 색상 각도, 색상 1 위치, 색상2 위치, 색상 3 위치 */
+    }
+    /* 원형 그라디언트 */
+    .box3{
+      margin: 20px;
+      width: 300px;
+      height: 200px;
+      background: radial-gradient(ellipse at center, #398235 0%, #ffffff 51%, #c9de96 100%);
+      /* 모양 at 위치, 색상1 위치, 색상2 위치, 색상3 위치 */
+    }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+</body>
+</html>
