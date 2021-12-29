@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prectics</title>
+  <style>
+    td{
+      background-color: cornsilk;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      color: darkgoldenrod;
+    }
+  </style>
+</head>
+<body>
+  <!-- 미리 병합을 작성하는 것이 아니라 해당하는 칸을 전부 만들어 준 후 병합을 하는게 직관적으로 보면서 작성하기 좋음 -->
+  <table>
+    <tr>
+      <td>1-1</td>
+      <td colspan="3">1-2</td>
+      <td>1-3</td>
+    </tr>
+
+    <tr>
+      <td rowspan="3">2-1</td>
+      <td rowspan="2">2-2</td>
+      <td colspan="2">2-3</td>
+      <td rowspan="3">2-4</td>
+
+    </tr>
+
+    <tr>
+      <td>3-1</td>
+      <td rowspan="2">3-2</td>
+    </tr>
+
+    <tr>
+      <td colspan="2">4-1</td>
+    </tr>
+
+    <tr>
+      <td>5-1</td>
+      <td colspan="3">5-2</td>
+      <td>5-5</td>
+    </tr>
+  </table>
+</body>
+</html>
