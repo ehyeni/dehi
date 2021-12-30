@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테이블 레이아웃 속성</title>
+  <style>
+    table{
+      border: 2px solid black;
+      border-collapse: collapse;
+      width: 400px;
+      /* table-layout: auto(줄에 칸을 늘려줌) fixed (칸을 고정해서 그냥 칸을 내용이 삐져나가버림); */
+      /* word-break: break-all; 영어의 속성상 자동으로 줄바꿈이 안되기 때문에 이 속성을 넣어주어 칸 안에 맞춰 줄바꿈을 함*/
+      /* word-break: keep-all; 한글의 속성상 자동으로 줄바꿈이 되기 떄문에 이 속성을 넣어주어 칸 무시하고 글씨가 삐져 나가게 할 수 있음*/
+    }
+
+    td{
+      border: 1px dotted black;
+      padding: 15px;
+      height: 40px;
+      text-align: center;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>표 스타일</caption>
+    <tr>
+      <td>kfjaslkjfl;ajfsdjafklsjdlfja;fjsklajflksjaf;ljsalfjalkjflajf;afjaf</td>
+      <td>벤허</td>
+    </tr>
+    <tr>
+      <td>11:00~14:30</td>
+      <td>16:00~19:00</td>
+    </tr>
+  </table>
+</body>
+</html>
