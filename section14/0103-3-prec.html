@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input 태그</title>
+  <style>
+    div{
+      width: 500px;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <div>
+      <label for="user name">아이디</label>
+      <input type="text">
+    </div>
+
+    <div>
+      <label for="password1">비밀번호</label>
+      <input type="password">
+    </div>
+
+    <div>
+      <label for="password2">비밀번호 확인</label>
+      <input type="password">
+    </div>
+
+    <div>
+      <label for="tags">태그</label>
+      <input type="search">
+    </div>
+
+    <div>
+      <label for="site">개인 홈페이지</label>
+      <input type="url">
+    </div>
+
+    <div>
+      <label for="email">이메일</label>
+      <input type="email">
+    </div>
+
+    <!-- 핸드폰으로 보면 숫자 키보드로 뜨는 것 -->
+    <div>
+      <label for="phone">전화번호</label>
+      <input type="tel">
+    </div>
+
+    <div>
+      <label for="age">나이</label>
+      <input type="number" mit="1" max="100" step="5">
+    </div>
+
+    <div>
+      <label for="happy">지금 얼마나 행복한가요?</label> <br>
+    
+      <input type="range" min="1" max="5" value="1">
+    </div>
+
+    <div>
+      <label for="sex">성별</label>
+      <br>
+      <label for="sex">남</label>
+      <input type="radio" name="성별">
+      <label for="sex">여</label>
+      <input type="radio" name="성별">
+    </div>
+    
+    <div>
+      <label for="inter">당신의 취미는 무엇인가요?</label><br>
+
+      <label for="inter">축구</label>
+      <input type="checkbox" name="inter">
+      <label for="inter">농구</label>
+      <input type="checkbox" name="inter">
+      <label for="inter">야구</label>
+      <input type="checkbox" name="inter">
+      <label for="inter">발레</label>
+      <input type="checkbox" name="inter">
+      <label for="inter">풋살</label>
+      <input type="checkbox" name="inter">
+    </div>
+
+    <div>
+      <label for="color">좋아하는 색상은?</label>
+      <input type="color">
+    </div>
+
+    <div>
+      <label for="date">당신은 언제 태어났나요?</label><br>
+      <input type="date">
+    </div>
+
+    <div>
+      <label for="time">당신은 몇시에 태어났나요?</label><br>
+      <input type="time">
+    </div>
+
+    <!-- 벨류로  버튼의 이름을 정할 수 있음-->
+    <input type="reset" value="다시 작성">
+    <input type="submit">
+  </form>
+</body>
+</html>
