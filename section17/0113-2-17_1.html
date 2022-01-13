@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반응 선택자 활용</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .box{
+      width: 200px;
+      height: 200px;
+      position: relative;
+      background-color: green;
+      /* 효과가 일어나는 초를 지정함 */
+      transition-duration: 2s;
+    }
+    /* 호버 - 떠있다는 뜻 , 마우스가 떠있다 (마우스오버시 효과 나타남) */
+    .box:hover{
+      width: 400px;
+      height: 400px;
+    }
+    /* 클릭했을때 괄호 안의 스타일이 나타남 */
+    .box:active{
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
