@@ -6,23 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>연습문제 - 마우스</title>
   <style>
+
+    /* 초기화 */
   *{
     margin: 0;
     padding: 0;
   }
 
+
   .container{
-    width: 300px;
-    height: 300px;
-    background-color: #cecece;
-    margin: 20px;
-    position: relative;
+    width: 300px; /* 배경 박스 크기 지정: 넓이 */
+    height: 300px; /* 배경 박스 크기 지정 : 높이 */
+    background-color: #cecece; /* 박스 색상 지정 */
+    margin: 20px; /* 박스가 너무 가에 붙지 않게 마진 띄워줌 */
+    position: relative; /* 행으로 정렬 되도록 상대좌표(입력한 순서로부터 좌표 영향 받음 쌓이는 식)로 지정 */
   }
   .center-bottom{
-    position: absolute;
-    left: 50%;
-    top: 70%;
-    transform: translateX(-50%);
+    position: absolute; /* '절대 위치 좌표'로 부모 박스 기준으로 정렬하고 스크롤에 따라 이동하는 좌표 */
+    left: 50%; /* 좌표 위치를 찍는 것 왼쪽으로부터 얼마나 떨어질건지*/
+    top: 70%; /* 좌표 위치를 찍음 위에서부터 얼마나 떨어질건지 */
+    transform: translateX(-50%); /*  */ 
     animation: drag 2s infinite;
   }
   .mouse{
