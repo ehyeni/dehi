@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>max-width</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #wrapper{
+      width: 96%;
+      margin: 0 auto;
+    }
+    header{
+      width: 100%;
+      height: 120px;
+      background-color: aquamarine;
+    }
+    aside{
+      float: left;
+      width: 31.25%;
+      background-color: antiquewhite;
+    }
+    section{
+      float: right;
+      width: 62.5%;
+      background-color: darksalmon;
+    }
+
+    section>img{
+      /* 맥스 위스는 브라우저에 따라 크기가 조절 되지만 브라우저를 쭉~늘려도 맥스로 지정한 크기에서 멈춤 */
+      max-width: 100%;
+      height: auto;
+    }
+    
+    footer{
+      clear: both; /* 박스가 치고 올라가는 것을 막아줌 */
+      width: 100%;
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header>가변 그리드 만들어보기</header>
+    <aside>aside</aside>
+    <section>
+      <img src="/img/pen.png" alt="pen">
+    </section>
+    <footer>footer</footer>
+  </div>
+</body>
+</html>

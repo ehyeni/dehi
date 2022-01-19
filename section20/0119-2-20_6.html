@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>브라우저 넓이 마다 색이 바뀌는 것</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html{
+      color: white;
+      font-weight: 900;
+    }
+    @media screen and (max-width:767px){
+      html{
+        background-color: red;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 959px){
+      html{
+        background-color: green;
+      }
+    }
+
+    @media screen and (min-width: 959px) {
+      html{
+        background-color: blue;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Lorem ipsum</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida diam in nisi vehicula interdum. Vestibulum a tellus tristique, mattis nisl eget, auctor nibh. Fusce at ultricies ligula. Nulla euismod purus nisl, quis malesuada ante tristique ut. Pellentesque pulvinar nulla vitae sem luctus tempus. Etiam purus urna, mattis a nunc eu, tempus semper ligula. Etiam lacinia metus sem, lobortis vehicula ligula facilisis euismod.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida diam in nisi vehicula interdum. Vestibulum a tellus tristique, mattis nisl eget, auctor nibh. Fusce at ultricies ligula. Nulla euismod purus nisl, quis malesuada ante tristique ut. Pellentesque pulvinar nulla vitae sem luctus tempus. Etiam purus urna, mattis a nunc eu, tempus semper ligula. Etiam lacinia metus sem, lobortis vehicula ligula facilisis euismod.</p>
+</body>
+</html>
