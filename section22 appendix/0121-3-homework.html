@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그라디언트 글자 애니메이션</title>
+  <style>
+    h1{
+        background: linear-gradient(90deg, #febbbb, #d1ccff 15%, #eacf56 35%, #febbbb 50%, #d1ccff 65%, #eacf56 85%, #febbbb);
+        -webkit-text-fill-color: transparent; /* 글씨를 투명으로 바꿔줌 */
+        -webkit-background-clip: text; /*텍스트 클리핑 마스크*/
+        background-size: 200% 100%; /*배경을 텍스트보다 크게 해줘야 움직임이 생김*/
+        animation: gradient 3s linear infinite; /*linear 처음부터 끝까지 일정한 속도로 움직이기*/
+      }
+
+      /*  
+        [css] 접두어 webkit, moz, ms, o 의미
+          -webkit- : 크롬, 사파리 브라우저에 적용
+          -moz- : 파이어폭스 브라우저에 적용
+          -ms- : 익스플로러에 적용, 보통 생략합니다.
+          -o- : 오페라 브라우저에 적용 */
+
+    @keyframes gradient{
+      0%{
+        background-position: 0;
+      }
+      
+      100%{
+        background-position: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>HAPPY HAPPY HAPPY</h1>
+</body>
+</html>
