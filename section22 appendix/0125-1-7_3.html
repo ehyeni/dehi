@@ -13,34 +13,29 @@
     margin: 0;
   }
 
-  body{
-    width: 1000px;
-    margin: 0 auto;
-  }
-  h1{
-    text-align: center;
-    line-height: 30px;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    margin-bottom: 20px;
-  }
-
-  nav{
-    margin: 0 auto; 
-  }
-
   img{
     display: block;
     border: none;
   }
-  .menu{
+
+  li{
     list-style: none;
-    float: left;
-    width: 20px;
-    text-align: center;
-    margin: 0 50px;
   }
 
+
+
+  ul{
+    margin: 0 auto;
+  }
+  .menu{
+    float: left;
+    margin: 0 30px;
+  }
   
+  .menu>p{
+    text-align: center;
+  }
+
   </style>
 </head>
 <body>
@@ -48,13 +43,98 @@
      <h1>Afredo<br>gonzales</h1>
      <nav>
        <ul>
-         <li class="menu"><img src="..//img/menu01.png" alt="Home">home</li>
-         <li class="menu"><img src="..//img/menu02.png" alt="Shop">Shop</li>
-         <li class="menu"><img src="..//img/menu03.png" alt="Custombox">Custombox</li>
-         <li class="menu"><img src="..//img/menu04.png" alt="Blog">Blog</li>
-         <li class="menu"><img src="..//img/menu05.png" alt="Story">Story</li>
+         <li class="menu">
+          <div>
+            <img src="..//img/menu01.png" alt="Home">
+          </div>
+            <p>Home</p>
+        </li>
+          <li class="menu"> 
+          <div>
+            <img src="..//img/menu02.png" alt="Shop">
+          </div>
+            <p>Shop</p>
+        </li>
+          <li class="menu"> 
+          <div>
+            <img src="..//img/menu03.png" alt="Custombox">
+          </div> 
+            <p>Custombox</p>
+        </li>
+          <li class="menu">
+          <div>
+            <img src="..//img/menu04.png" alt="Blog">
+          </div> 
+            <p>Blog</p>
+        </li>
+          <li class="menu">
+          <div>
+            <img src="..//img/menu05.png" alt="Story">
+            <p>Story</p>
+          </div> 
+        </li>
        </ul>
      </nav>
+     <section class="section01">
+       <div class="section01_container">
+         <div class="box_left">
+           <img src="../img/header01.jpg" alt="">
+         </div>
+         <div class="box_right">
+           <div class="box_right_top">
+             <img src="../img/side01.jpg" alt="">
+           </div>
+           <div class="box_right_bottom">
+             <div class="box_right_bottom_text">
+               <p>DESIGN YOUR WON SOCK</p>
+               <p>THE WORK SHOP</p>
+             </div>
+             <div class="box_right_bottom_text">
+              <p>SELF SERVICE</p>
+              <p>ONLINE STORE</p>
+            </div>
+           </div>
+         </div>
+       </div>
+     </section>
+     <section class="section02">
+      <div class="section02_container">
+        <div class="box_left">
+          <div class="box_left_top">
+            <img src="../img/banner_01.jpg" alt="">
+          </div>
+          <div class="box_left_bottom">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CBqHVIUU2Ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="box_right">
+          <img src="..//img/banner_02.jpg" alt="">
+        </div>
+      </div>
+     </section>
+     <section class="section03">
+      <div class="section03_container">
+        <img src="..//img/banner_03.jpg" alt="">
+        <img src="..//img/banner_04.jpg" alt="">
+        <img src="..//img/video.jpg" alt="">
+     </section>
+     <section class="section04">
+      <div class="box_left">
+        <img src="..//img/banner_05.jpg" alt="">
+      </div>
+      <div class="box_right">
+        <div class="right_top">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/CBqHVIUU2Ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="right_bottom">
+          <form>
+            <label for="q_serchh">SIGN UP</label>
+              <input type="text" value="your email address">
+              <input type="submit" value="SEND">
+          </form>
+        </div>
+      </div>
+     </section>
    </header>
 </body>
 </html>
