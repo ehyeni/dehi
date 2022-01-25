@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습문제 7-2</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    li{
+      list-style: none;
+    }
+    img{
+      /* 이미지는 인라인 속성이기 때문에 태그의 오차간격이 생겨서 블록속성으로 바꾸면서 초기화함 */
+      display: block;
+    }
+    body{
+      font-size: 14px;
+      line-height: 23px;
+      font-family: Arial;
+      color: black;
+    }
+    h2, h3{
+      margin-bottom: 15px;
+    }
+
+    #top{
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    #box_all{
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    #footer{
+      width: 1000px;
+      height: 40px;
+      margin: 0 auto;
+ 
+    }
+
+    .top_left{
+      width: 750px;
+      height: 500px;
+      background-image: url(../img/0320-1.jpg);
+      background-repeat: no-repeat;
+      /* 스크롤이 아닌 픽스로 하면 브라우저 조절할때마다 그림이 안따라오고 잘리게 표시됨 클리핑마스크처럼*/
+      background-attachment: scroll;
+      float: left;
+    }
+
+    .top_box{
+      width: 250px;
+      height: 250px;
+      margin-top: 250px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .top_right{
+      width: 250px;
+      height: 500px;
+      float: left;
+    }
+
+    .box_left{
+      width: 750px;
+      height: 500px;
+      float: left;
+      background-color: gray;
+    }
+
+    .box_right{
+      width: 250px;
+      height: 500px;
+      background-color: yellow;
+      float: left;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .box{
+      width: 250px;
+      height: 250px;
+      float: left;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .box:nth-child(2n){
+      background-color: burlywood;
+    }
+
+    .box:nth-child(2n+1){
+      background-color: brown;
+      color: white;
+    }
+    
+    .f_left{
+      width: 750px;
+      height: 40px;
+      float: left;
+      background-color: gray;
+    }
+
+    .f_left ul {
+      margin-left: 20px;
+    }
+
+    .f_left li{
+      float: left;
+      margin: 0 10px;
+      font-size: 12px;
+      line-height: 40px;
+    }
+
+    .f_right{
+      width: 250px;
+      height: 40px;
+      float: left;
+      background-color: black;
+      color: white;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    .f_right select{
+      width: 200px;
+      height: 30px;
+      color: white;
+      text-align: center;
+      line-height: 30px;
+      border:none;
+      background-color: cadetblue;
+      margin: 5px auto;
+      padding-left: 20px;
+    } 
+
+
+  </style>
+</head>
+<body>
+
+  <div id="top">
+    <div class="top_left">
+      <div class="top_box">
+        <h2>
+          GLOBAL <br>
+          BUSINESS
+        </h2>
+        <p>
+          GLOBAL No.1 lifestyle, media Shopping Leader<br>
+          라이프스타일을 선동하는 세계 최고의 미디어 쇼핑리더
+        </p>
+      </div>
+    </div>
+    <div class="top_right">
+      <img src="../img/0320-2.jpg" alt="이미지">
+      <img src="../img/0320-3.jpg" alt="이미지">
+    </div>
+  </div>
+
+  <div id="box_all">
+    <div class="box_left">
+      <div class="box">
+        <h3>CSV</h3>
+        <p>
+          상생 이념을 통해 함께 성장하고 <br>
+          사회에 공헌하는 CSV 프로그램과 <br>
+          활동소식을 안내합니다 <br>
+        </p>
+      </div>
+      <div class="box">
+        <h3>입점안내</h3>
+        <p>
+          고객에게 늘 새롭고 Trendy한 제안을 하는 CJ O shopping!
+          힘찬 도약을 함께할 동반자를 찾습니다.
+        </p>
+      </div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+    <div class="box_right">7</div>
+  </div>
+  <div id="footer">
+    <div class="f_left">
+      <ul>
+        <li>법적고지</li>
+        <li>이메일무단수집거부</li>
+        <li>이용약관</li>
+        <li>개인정보취급방침</li>
+        <li>고객센터</li>
+        <li>입찰공고</li>
+      </ul>
+    </div>
+    <div class="f_right">
+      <form>
+        <select>
+          <option>
+            cj그롭계열사바로가기
+          </option>
+        </select>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
