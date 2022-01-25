@@ -22,119 +22,282 @@
     list-style: none;
   }
 
+  /* 로고 */
 
-
-  ul{
-    margin: 0 auto;
-  }
-  .menu{
-    float: left;
-    margin: 0 30px;
-  }
-  
-  .menu>p{
+  h1{
+    font-family: 'Mochiy Pop P One', sans-serif;
     text-align: center;
   }
+  
+  /* 메뉴 */
+
+  nav {
+    width: 566px;
+    margin: 0 auto;
+  }
+
+  .menu{
+    margin: 20px 30px;
+    float: left;
+  }
+
+  .menu img{
+    margin: 0 auto;
+  }
+
+  .menu>p{
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .menu>p:hover{
+    border-bottom: solid 2px black;
+  }
+
+  /* 섹션 1 */
+
+  .section01{
+    width: 1600px;
+    height: 633px;
+    margin: 67px auto;
+  }
+
+  .box_left{
+    float: left;
+  }
+
+  .box_right{
+    float: right;
+  }
+
+  .box_right_bottom_text{
+    width: 316px;
+    height: 160px;
+    margin-top: 10px;
+    border: 5px solid black;
+    box-sizing: border-box;
+  }
+
+  .box_right_bottom_text>p:nth-child(1){
+    line-height:40px;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+
+  .box_right_bottom_text>p:nth-child(2){
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 25px;
+  }
+
+  /* 섹션 2 */
+
+  .section02{
+    width: 1600px;
+    height: 1060px;
+    margin: 0px auto;
+    margin-top: 3px;
+    box-sizing: border-box;
+  }
+
+  .box02_right{
+    float: right;
+    width: 785px;
+  }
+
+  .box02_left{
+    float: left;
+  }
+
+  .box02_left_bottom{
+    margin-top: 10px;
+  }
+
+  /* 섹션 3 */
+
+  .section03{
+    width: 1600px;
+    height: 1731px;
+    margin: 10px auto;
+  }
+
+  /* 섹션 4 */
+
+  .section04{
+    width: 1600px;
+    margin: 0 auto;
+    height: 726px;
+    margin-bottom: 30px;
+  }
+
+  .box04_left{
+    float: left;
+  }
+
+  .box04_right{
+    float: right;
+  }
+
+  .box04_right_bottom{
+    width: 805px;
+    height: 160px;
+    box-sizing: border-box;
+  }
+
+  form{
+    width: 510px;
+    height: 40px;
+    margin: 65px auto;
+  }
+
+  label{
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    font-weight: bold;
+  }
+
+  .box04_right_bottom input[type=text]{
+    width: 350px;
+    height: 40px;
+    float: left;
+    border: none;
+    background-color: lightgrey;
+    padding-left: 20px;
+    color: gray;
+    box-sizing: border-box;
+    
+  }
+
+  .box04_right_bottom input[type=submit]{
+    width: 60px;
+    height: 40px;
+    display: block;
+    border: none;
+    float: left;
+  }
+
+
+
+
+
 
   </style>
 </head>
 <body>
-   <header>
-     <h1>Afredo<br>gonzales</h1>
-     <nav>
-       <ul>
-         <li class="menu">
+  <header>
+    <h1>Afredo<br>gonzales</h1>
+    <nav>
+      <ul class="navi">
+
+        <li class="menu">
           <div>
             <img src="..//img/menu01.png" alt="Home">
           </div>
             <p>Home</p>
         </li>
+
           <li class="menu"> 
           <div>
             <img src="..//img/menu02.png" alt="Shop">
           </div>
             <p>Shop</p>
         </li>
+
           <li class="menu"> 
           <div>
             <img src="..//img/menu03.png" alt="Custombox">
           </div> 
             <p>Custombox</p>
         </li>
+
           <li class="menu">
           <div>
             <img src="..//img/menu04.png" alt="Blog">
           </div> 
             <p>Blog</p>
         </li>
+
           <li class="menu">
           <div>
             <img src="..//img/menu05.png" alt="Story">
-            <p>Story</p>
           </div> 
+          <p>Story</p>
         </li>
-       </ul>
-     </nav>
-     <section class="section01">
-       <div class="section01_container">
-         <div class="box_left">
-           <img src="../img/header01.jpg" alt="">
-         </div>
-         <div class="box_right">
-           <div class="box_right_top">
-             <img src="../img/side01.jpg" alt="">
-           </div>
-           <div class="box_right_bottom">
-             <div class="box_right_bottom_text">
-               <p>DESIGN YOUR WON SOCK</p>
-               <p>THE WORK SHOP</p>
-             </div>
-             <div class="box_right_bottom_text">
+
+      </ul>
+    </nav>
+
+    <section class="section01">
+      <div class="section01_container">
+
+        <div class="box_left">
+          <img src="../img/header01.jpg" alt="">
+        </div>
+
+        <div class="box_right">
+
+          <div class="box_right_top">
+            <img src="../img/side01.jpg" alt="">
+          </div>
+
+          <div class="box_right_bottom">
+            <div class="box_right_bottom_text">
+              <p>DESIGN YOUR WON SOCK</p>
+              <p>THE WORK SHOP</p>
+            </div>
+            <div class="box_right_bottom_text">
               <p>SELF SERVICE</p>
               <p>ONLINE STORE</p>
             </div>
-           </div>
-         </div>
-       </div>
-     </section>
-     <section class="section02">
-      <div class="section02_container">
-        <div class="box_left">
-          <div class="box_left_top">
-            <img src="../img/banner_01.jpg" alt="">
-          </div>
-          <div class="box_left_bottom">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CBqHVIUU2Ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
-        <div class="box_right">
+      </div>
+
+    </section>
+    <section class="section02">
+      <div class="section02_container">
+        <div class="box02_left">
+          <div class="box02_left_top">
+            <img src="../img/banner_01.jpg" width="805" alt="">
+          </div>
+          <div class="box02_left_bottom">
+            <iframe width="805" height="486.3" src="https://www.youtube.com/embed/CBqHVIUU2Ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="box02_right">
           <img src="..//img/banner_02.jpg" alt="">
         </div>
       </div>
-     </section>
-     <section class="section03">
+    </section>
+    <section class="section03">
       <div class="section03_container">
         <img src="..//img/banner_03.jpg" alt="">
         <img src="..//img/banner_04.jpg" alt="">
         <img src="..//img/video.jpg" alt="">
-     </section>
-     <section class="section04">
-      <div class="box_left">
+    </section>
+    <section class="section04">
+      <div class="box04_left">
         <img src="..//img/banner_05.jpg" alt="">
       </div>
-      <div class="box_right">
+      <div class="box04_right">
         <div class="right_top">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/CBqHVIUU2Ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="805" height="560" src="https://www.youtube.com/embed/CBqHVIUU2Ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="right_bottom">
+        <div class="box04_right_bottom">
           <form>
-            <label for="q_serchh">SIGN UP</label>
+            <label>SIGN UP</label>
               <input type="text" value="your email address">
               <input type="submit" value="SEND">
           </form>
         </div>
       </div>
-     </section>
-   </header>
+    </section>
+  </header>
 </body>
 </html>
