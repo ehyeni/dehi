@@ -7,6 +7,7 @@
     <title>연습문제 7-4</title>
     <link rel="stylesheet" href="reset.css">
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
       /* 헤더 */
 
@@ -25,7 +26,7 @@
       }
 
       .navi>li{
-        margin: 0 30px;
+        margin: 30px 30px;
       }
 
       .litext{
@@ -47,6 +48,7 @@
         height: 230px;
         background-color: blanchedalmond;
         text-align: center;
+        font-size: 10px;
         line-height: 23px;
         padding-top: 30px;
         box-sizing: border-box;
@@ -56,6 +58,11 @@
       .dinnertime{
         font-weight: bold;
         font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .reclaim{
+        font-size: 13px;
       }
 
       button{
@@ -73,58 +80,82 @@
         background-color: orange;
       }
 
+      .litext:hover {
+        color: lightsalmon;
+        cursor: pointer;
+        text-decoration: underline;
+      }
       /* 섹션 2 */
 
       .section2{
-        height: 400px;
-        background-color: whitesmoke;
+        height: 350px;
         padding: 15px;
         box-sizing: border-box;
       }
-
+      
       .what{
         margin: 15px;
         text-align: center;
         line-height: 25px;
       }
-
+      
       .what span{
         font-size: 20px;
         font-weight: bold;
-
+        font-family: 'Roboto', sans-serif;
+        
       }
-
+      
       .infoli{
-        width: 300px;
-        height: 250px;
-        padding-top: 50px;
+        width: 230px;
+        height: 200px;
+        padding-top: 25px;
+        margin: 0 20px;
         float: left;
+        font-size: 13px;
         text-align: center;
+        line-height: 25px;
         box-sizing: border-box;
       }
-
+      
       .info>ul{
-        width: 1200px;
+        width: 1080px;
         margin: 0 auto;
       }
-
+      
       .infoli p{
-        margin: 12px;
+        margin-top: 12px;
       }
-
+      
+      .infoli:hover{
+        border-bottom: 1px dotted black;
+        cursor: pointer;
+      }
       /* 섹션 3 */
 
       .section3{
-        height: 400px;
+        height: 304px;
         background-color: #ececec;
       }
 
       .section3_box{
-        width: 400px;
+        width: 814px;
+        margin: 0 auto;
+      }
+
+      .section3 p{
+        width: 500px;
         height: 204px;
-        padding-top: 150px;
+        padding-top: 120px;
+        line-height: 20px;
+        font-size: 15px;
         box-sizing: border-box;
         float: left;
+      }
+
+      .section3 span{
+        font-weight: bold;
+        font-size: 20px;
       }
 
       .section3 figure{
@@ -154,7 +185,7 @@
     </nav>
     <section class="mainbanner">
       <div class="mainbanner_box">
-        <p>RECLAIM<br>
+        <p><span class="reclaim">RECLAIM</span><br>
         <spen class="dinnertime">DINNERTIME<br></spen>
         Fresh ingredients. Chef-made.<br>
         Delivered. Ready when you are.<br>
@@ -178,29 +209,29 @@
             <figure>
               <img src="../img/icon1.png" alt="">
             </figure>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p>Chef-Made Meals Our chefs use fresh,<br> seasonal ingredients to make <br> affordable, tasty, nourishing meals.</p>
           </li>
 
           <li class="infoli">
             <figure>
               <img src="../img/icon2.png" alt="">
             </figure>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p>Chef-Made Meals Our chefs use fresh,<br> seasonal ingredients to make <br> affordable, tasty, nourishing meals.</p>
           </li>
 
           <li class="infoli">
             <figure>
               <img src="../img/icon3.png" alt="">
             </figure>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <p>Chef-Made Meals Our chefs use fresh,<br> seasonal ingredients to make <br> affordable, tasty, nourishing meals.</p>
           </li>
           
-                    <li class="infoli">
-                      <figure>
-                        <img src="../img/icon4.png" alt="">
-                      </figure>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    </li>
+          <li class="infoli">
+              <figure>
+                <img src="../img/icon4.png" alt="">
+              </figure>
+              <p>Chef-Made Meals Our chefs use fresh,<br> seasonal ingredients to make <br> affordable, tasty, nourishing meals.</p>
+          </li>
         </ul>
       </div>
     </section>
@@ -208,14 +239,14 @@
       <div class="section3_box">
         <p>
           <span>MEET OUR CHEF</span> <br>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          Munchery chefs come from top restaurant kitchens. They bring mad skills, tons of passion, and expertise in a delicious array of cuisines. <br> They insist, as we do, on using only the freshest seasonal ingredients.
         </p>
+        
+        <figure>
+          <img src="../img/human.png" alt="">
+        </figure>
+        
       </div>      
-
-      <figure>
-        <img src="../img/human.png" alt="">
-      </figure>
-
     </section>
     </header>
 </body>
