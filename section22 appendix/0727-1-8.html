@@ -10,26 +10,36 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-    header{
+    body{
+    position: relative;
+    /* 왼쪽 네비게이션 */
+    }
+    aside{
       width: 200px;
+      height: 100%;
       background-color: black;
-      padding: 25px;
       box-sizing: border-box;
+      position: fixed;
+    }
+
+    .menu{
+      width: 144px;
+      margin: 0 auto;
+      font-family: 'Bree Serif', serif;
+      line-height: 25px;
     }
     
-    .category{
-      font-family: 'Bree Serif', serif;
-      line-height: 35px;
-      font-size: 12px;
+    li{
+      font-size: 11px;
       color: gray;
     }
     
-    .gruop{
-      font-size: 15px;
+    h3{
+      font-size: 12px;
       color: white;
     }
     
-    .category>li>span{
+    .member>li>span{
       color: green;
     }
     
@@ -37,14 +47,20 @@
       text-align: center;
       font-family: 'Alfa Slab One', cursive;
       color: white;
-      font-size: 25px;
       margin-bottom: 15px;
     }
 
+    form{
+      width: 144px;
+      margin: 12px auto;
+      display: flex;
+    }
     input[type=text]{
-      width: 50px;
-
-      margin: ;
+      width: 80px;
+      display: block;
+      background-color: dimgray;
+      border: gray solid 1px;
+      line-height: 20px;
     }
     
     input[type=submit]{
@@ -53,50 +69,100 @@
       font-size: 5px;
       line-height: 20px;
       text-align: center;
-      box-sizing: border-box;
-      border: 1px solid gray;
+      border: 1px solid ;
       background-color: black;
+      display: block;
+    }
+
+    /* 오른쪽 섹션 전체 설정 */
+
+    section{
+      width: 1400px;
+      background-color: darkorange;
+      position: relative;
+      float: right;
+
 
     }
+
+    /* 상단 배너 */
+
+
+    .videobanner{
+      width: 1200px;
+      height: 399px;
+      background: url(../img/main_pic.jpg);
+      margin: 30px auto;
+    }
+    
+
+    .play{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: black;
+      position: absolute;
+      top: 10%;
+      left: 50px;
+      
+    }
+    .play p{
+      color: white;
+      text-align: center;
+      line-height: 80px;
+    }
+
+
+
 
 
   </style>
 </head>
 <body>
-  <header>    
+  <aside>    
     <nav>
       <!-- 카테고리 대제목 끼리 묶어보기 -->
       <h1>1987<br>DESIGN</h1>
-      <ul class="category">
-        <li class="gruop">Member</li>
-        <li>Login</li>
-        <li>Join us</li>
-        <li>Cart<span> (OITEM)</span></li>
-        <li>Order</li>
-        <li>My Page</li>
-        <li class="gruop">Category</li>
-        <li>Outer</li>
-        <li>Top</li>
-        <li>Bottom</li>
-        <li>Acc</li>
-        <li>Sale</li>
-        <li>Today View</li>
-        <li class="gruop">Board</li>
-        <li>Notics</li>
-        <li>Review</li>
-        <li>Q&A</li>
-      </ul>
+      <div class="menu">
+        <h3>MEMBER</h3>
+        <ul class="member">
+          <li>Member</li>
+          <li>Login</li>
+          <li>Join us</li>
+          <li>Cart<span> (OITEM)</span></li>
+          <li>Order</li>
+          <li>My Page</li>
+        </ul>
+        <h3>CATEGORY</h3>
+        <ul class="categoty">
+          <li>Outer</li>
+          <li>Top</li>
+          <li>Bottom</li>
+          <li>Acc</li>
+          <li>Sale</li>
+          <li>Today View</li>
+        </ul>
+        <h3>BORAD</h3>
+        <ul class="board">
+          <li class="gruop">Board</li>
+          <li>Notics</li>
+          <li>Review</li>
+          <li>Q&A</li>
+        </ul>
+      </div>
     </nav>
 
     <form>
       <input type="text">
       <input type="submit" value="SEARCH">
     </form>
-  </header>
+  </aside>
   <section>
     <div class="videobanner">
       <div class="play">
-        ▶
+          <p>
+            ▶
+          </p>
       </div>
     </div>
 
