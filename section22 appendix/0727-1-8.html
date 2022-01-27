@@ -10,15 +10,16 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
     body{
-    position: relative;
-    /* 왼쪽 네비게이션 */
+      width: 1600px;
     }
+    /* 왼쪽 네비게이션 */
+    
     aside{
       width: 200px;
       height: 100%;
       background-color: black;
-      box-sizing: border-box;
       position: fixed;
     }
 
@@ -47,7 +48,17 @@
       text-align: center;
       font-family: 'Alfa Slab One', cursive;
       color: white;
-      margin-bottom: 15px;
+      margin: 15px auto;
+    }
+
+    li:hover{
+      color: coral;
+      cursor: pointer;
+    }
+    
+    h3:hover{
+      color: coral;
+      cursor: pointer;
     }
 
     form{
@@ -74,36 +85,37 @@
       display: block;
     }
 
-    /* 오른쪽 섹션 전체 설정 */
-
-    section{
-      width: 1400px;
-      background-color: darkorange;
-      position: relative;
-      float: right;
-
-
+    input[type=text]:focus{
+      background-color: darkgray;
+      outline: none;
     }
 
+    /* 오른쪽 섹션 전체 설정 */
+
+    .rightbox{
+      width: 1400px;
+      background-color: chocolate;
+      float: right;
+    }
+
+
     /* 상단 배너 */
-
-
     .videobanner{
       width: 1200px;
       height: 399px;
       background: url(../img/main_pic.jpg);
       margin: 30px auto;
+      position: relative;
     }
-    
-
     .play{
       width: 80px;
       height: 80px;
       border-radius: 50%;
       background-color: black;
       position: absolute;
-      top: 10%;
-      left: 50px;
+      top: 50%;
+      left: 50%;
+      margin-top: -40px;
       
     }
     .play p{
@@ -111,11 +123,15 @@
       text-align: center;
       line-height: 80px;
     }
+    /* 이미지 */
+    img{
+      margin: 0 10px 20px 10px;
+    }
 
-
-
-
-
+    figure{
+      width: 1100px;
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body>
@@ -157,34 +173,32 @@
       <input type="submit" value="SEARCH">
     </form>
   </aside>
-  <section>
-    <div class="videobanner">
-      <div class="play">
-          <p>
-            ▶
-          </p>
+
+  <section class="rightbox">
+      <div class="videobanner">
+        <div class="play">
+            <p>
+              ▶
+            </p>
+        </div>
       </div>
-    </div>
+  
+        <figure>
+          <img src="../img/bn1.jpg" alt="">
+          <img src="../img/bn2.jpg" alt="">
+          <img src="../img/bn3.jpg" alt="">
+          <img src="../img/bn4.jpg" alt="">
+          <img src="../img/bn5.jpg" alt="">
+          <img src="../img/bn6.jpg" alt="">
+          <img src="../img/bn7.jpg" alt="">
+          <img src="../img/bn8.jpg" alt="">
+          <img src="../img/bn9.jpg" alt="">
+          <img src="../img/bn10.jpg" alt="">
+          <img src="../img/bn11.jpg" alt="">
+          <img src="../img/bn12.jpg" alt="">
+        </figure>
 
-    <div class="photo">
-      <figure>
-        <img src="../img/bn1.jpg" alt="">
-        <img src="../img/bn2.jpg" alt="">
-        <img src="../img/bn3.jpg" alt="">
-        <img src="../img/bn4.jpg" alt="">
-        <img src="../img/bn5.jpg" alt="">
-        <img src="../img/bn6.jpg" alt="">
-        <img src="../img/bn7.jpg" alt="">
-        <img src="../img/bn8.jpg" alt="">
-        <img src="../img/bn9.jpg" alt="">
-        <img src="../img/bn10.jpg" alt="">
-        <img src="../img/bn11.jpg" alt="">
-        <img src="../img/bn12.jpg" alt="">
-      </figure>
-
-    </div>
   </section>
-  
-  
+    
 </body>
 </html>
