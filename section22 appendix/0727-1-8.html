@@ -11,8 +11,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
-    body{
+    .container{
       width: 1600px;
+      margin: 0 auto;
     }
     /* 왼쪽 네비게이션 */
     
@@ -130,6 +131,7 @@
     /* 이미지 */
     img{
       margin: 0 12px 24px 12px;
+      box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.2);
     }
 
     figure{
@@ -139,70 +141,73 @@
   </style>
 </head>
 <body>
-  <aside>    
-    <nav>
-      <!-- 카테고리 대제목 끼리 묶어보기 -->
-      <h1>1987<br>DESIGN</h1>
-      <div class="menu">
-        <h3>MEMBER</h3>
-        <ul class="member">
-          <li>Member</li>
-          <li>Login</li>
-          <li>Join us</li>
-          <li>Cart<span> (OITEM)</span></li>
-          <li>Order</li>
-          <li>My Page</li>
-        </ul>
-        <h3>CATEGORY</h3>
-        <ul class="categoty">
-          <li>Outer</li>
-          <li>Top</li>
-          <li>Bottom</li>
-          <li>Acc</li>
-          <li>Sale</li>
-          <li>Today View</li>
-        </ul>
-        <h3>BORAD</h3>
-        <ul class="board">
-          <li class="gruop">Board</li>
-          <li>Notics</li>
-          <li>Review</li>
-          <li>Q&A</li>
-        </ul>
-      </div>
-    </nav>
+  <div class="container">
 
-    <form>
-      <input type="text">
-      <input type="submit" value="SEARCH">
-    </form>
-  </aside>
-
-  <section class="rightbox">
-      <div class="videobanner">
-        <div class="play">
-            <p>
-              ▶
-            </p>
+    <aside>    
+      <nav>
+        <!-- 카테고리 대제목 끼리 묶어보기 -->
+        <h1>1987<br>DESIGN</h1>
+        <div class="menu">
+          <h3>MEMBER</h3>
+          <ul class="member">
+            <li>Member</li>
+            <li>Login</li>
+            <li>Join us</li>
+            <li>Cart<span> (OITEM)</span></li>
+            <li>Order</li>
+            <li>My Page</li>
+          </ul>
+          <h3>CATEGORY</h3>
+          <ul class="categoty">
+            <li>Outer</li>
+            <li>Top</li>
+            <li>Bottom</li>
+            <li>Acc</li>
+            <li>Sale</li>
+            <li>Today View</li>
+          </ul>
+          <h3>BORAD</h3>
+          <ul class="board">
+            <li class="gruop">Board</li>
+            <li>Notics</li>
+            <li>Review</li>
+            <li>Q&A</li>
+          </ul>
         </div>
-      </div>
+      </nav>
   
-        <figure>
-          <img src="../img/bn1.jpg" alt="">
-          <img src="../img/bn2.jpg" alt="">
-          <img src="../img/bn3.jpg" alt="">
-          <img src="../img/bn4.jpg" alt="">
-          <img src="../img/bn5.jpg" alt="">
-          <img src="../img/bn6.jpg" alt="">
-          <img src="../img/bn7.jpg" alt="">
-          <img src="../img/bn8.jpg" alt="">
-          <img src="../img/bn9.jpg" alt="">
-          <img src="../img/bn10.jpg" alt="">
-          <img src="../img/bn11.jpg" alt="">
-          <img src="../img/bn12.jpg" alt="">
-        </figure>
-
-  </section>
+      <form>
+        <input type="text">
+        <input type="submit" value="SEARCH">
+      </form>
+    </aside>
+  
+    <section class="rightbox">
+        <div class="videobanner">
+          <div class="play">
+              <p>
+                ▶
+              </p>
+          </div>
+        </div>
+    
+          <figure>
+            <img src="../img/bn1.jpg" alt="">
+            <img src="../img/bn2.jpg" alt="">
+            <img src="../img/bn3.jpg" alt="">
+            <img src="../img/bn4.jpg" alt="">
+            <img src="../img/bn5.jpg" alt="">
+            <img src="../img/bn6.jpg" alt="">
+            <img src="../img/bn7.jpg" alt="">
+            <img src="../img/bn8.jpg" alt="">
+            <img src="../img/bn9.jpg" alt="">
+            <img src="../img/bn10.jpg" alt="">
+            <img src="../img/bn11.jpg" alt="">
+            <img src="../img/bn12.jpg" alt="">
+          </figure>
+  
+    </section>
+  </div>
     
 </body>
 </html>
