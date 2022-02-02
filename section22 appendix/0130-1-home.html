@@ -99,6 +99,11 @@
       background-color: rgba(77, 184, 72, 0.9);
     }
 
+    .menuteb>div>p:hover{
+      color: white;
+      cursor: pointer;
+    }
+
     /* 섹션 2 */
 
     .contents{
@@ -175,6 +180,17 @@
     .footertext{
       line-height: 25px;
       padding-top: 24px;
+      color: lightgrey;
+      font-size: 13px;
+    }
+    .footertext>p>a{
+      text-decoration: none;
+      color: lightgray;
+    }
+
+    .copy{
+      color: gray;
+      font-size: 13px;
     }
 
     .footercontainer{
@@ -187,6 +203,7 @@
       .headercon{
         width: 100%;
         overflow: hidden;
+        transition-duration:  0.7s;
       }
       .logo{
         margin: 15px auto;
@@ -198,11 +215,56 @@
       }
 
       .menuteb{
-        width: 56.7%;
+        width: 50.52%;
         height: 200px;
         margin-bottom: 100px;
+        transition-duration:  0.5s;
+      }
+      
+      .menuteb>div{
+        width: 33.33%;
+      }
+
+      .contents{
+        transition-duration:  0.5s;
+        width: 80%;
+      } 
+
+      .contentsbox{
+        width: 47%;
+      }
+
+      .contentsbox img {
+        margin: 0;
+        width: 100%;
+      }
+
+      .memoboard{
+        width: 100%;
+      }
+
+      .memoboard>p>a{
+        font-size: 0.8em;
+        line-height: 35px;
+      }
+      .memoboard>p>span{
+      line-height: 35px;
+      font-size: 0.2em;
+      }
+      
+      footer{
+        transition-duration:  0.5s;
+      }
+
+      .footercontainer>img{
+        display: none;
+      }
+
+      .footertext{
+        text-align: center;
       }
     }
+
 
   </style>
 </head>
