@@ -15,11 +15,12 @@
     }
     .logo{
       float: left;
+      width: 120px;
+      margin: 15px 70px 15px 0px;
     }
     .logo img{
       height: 60px;
       display: block;
-      margin: 15px 70px 15px 0px;
     }
     select{
       float: left;
@@ -72,6 +73,7 @@
       height: 100px;
       background-color: rgba(17,145,208,0.9);
       padding-top: 20px;
+      position: relative;
       float: left;
 
     }
@@ -81,7 +83,7 @@
       text-align: center;
       display: block;
       width: 140px;
-      bottom: 5px;
+      bottom: 22px;
       color: lightgrey;
     }
     .menuteb>div>img{
@@ -178,6 +180,28 @@
     .footercontainer{
       width: 744px;
       margin: 0 auto;
+    }
+
+
+    @media screen and (max-width:960px) {
+      .headercon{
+        width: 100%;
+        overflow: hidden;
+      }
+      .logo{
+        margin: 15px auto;
+        float: none;
+      }
+
+      nav{
+        display: none;
+      }
+
+      .menuteb{
+        width: 56.7%;
+        height: 200px;
+        margin-bottom: 100px;
+      }
     }
 
   </style>
