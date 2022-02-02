@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>종합 연습문제</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* 헤더 */
+    header{
+      width: 100%;
+      height: 90px;
+      background-color: black;
+    }
+    .logo{
+      float: left;
+    }
+    .logo img{
+      height: 60px;
+      display: block;
+      margin: 15px 70px 15px 0px;
+    }
+    select{
+      float: left;
+      border: none;
+      height: 26px;
+      width: 100px;
+      text-align: center;
+      margin: 32px 0px 32px 70px;
+    }
+    nav>ul>li{
+      float: left;
+      color: white;
+      margin: 0 30px;
+      line-height: 90px;
+    }
+    .headercon{
+      width: 1058px;
+      margin: 0 auto;
+    }
+    nav>ul>li:hover{
+      color: tomato;
+      cursor: pointer;
+    }
+
+    /* 메인배너 */
+    .mainbanner{
+      background: url(../img/img001.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center;
+      position: relative;
+      /* 오버플로우 쓰임새 복습하기 */
+      overflow: hidden;
+    }
+    .blackbox {
+      width: 390px;
+      margin: 50px auto;
+    }
+
+    .menuteb{
+      position: relative;
+      width: 840px;
+      height: 100px;
+      margin: 60px auto;
+    }
+    
+    .menuteb>div{
+      width: 140px;
+      height: 100px;
+      background-color: rgba(17,145,208,0.9);
+      padding-top: 20px;
+      float: left;
+
+    }
+
+    .menuteb>div>p{
+      position: absolute;
+      text-align: center;
+      display: block;
+      width: 140px;
+      bottom: 5px;
+      color: lightgrey;
+    }
+    .menuteb>div>img{
+      display: block;
+      margin: 0 auto;
+    }
+
+    .menuteb>div:first-child{
+      background-color: rgba(245, 130, 31, 0.9);
+    }
+
+    .menuteb>div:last-child{
+      background-color: rgba(77, 184, 72, 0.9);
+    }
+
+    /* 섹션 2 */
+
+    .contents{
+      width: 1152px;
+      margin: 20px auto;
+    }
+
+    .contentsbox{
+      float: left;
+      margin: 8px;
+      width: 360px;
+    }
+    
+    .more{
+      display: block;
+      position: absolute;
+    }
+    .contentsbox>h2{
+      line-height: 50px;
+      font-size: 18px;
+    }
+
+    .contentsbox>img{
+      display: block;
+    }
+
+
+    .memoboard{
+      width: 360px;
+      height: 240px;
+      border-top: solid black 3px;
+      box-sizing: border-box;
+    }
+
+    .memoboard>p>a{
+      color: black;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 37px;
+    }
+
+    .memoboard>p>span{
+      color: gray;
+      float: right;
+      line-height: 37px;
+      font-size: 10px;
+      
+    }
+
+    /* 하단 */
+
+    footer{
+      width: 100%;
+      height: 100px;
+      background-color: black;
+      float: left;
+      color: white;
+      margin-top: 30px;
+    }
+
+
+    footer>img{
+      float: left;
+      display: block;
+      margin: 38.5px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="headercon">
+      <div class="logo">
+        <img src="../img/logo_1200.png" alt="야구발전전시관">
+      </div>
+      <nav>
+        <ul>
+          <li>관람</li>
+          <li>전시</li>
+          <li>교육</li>
+          <li>체험</li>
+          <li>소식</li>
+          <li>참여</li>
+          <li>전시관 소개</li>
+        </ul>
+        <select>
+          <option>Language</option>
+          <option>Korea</option>
+          <option>Engilsh</option>
+          <option>Japanese</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <section class="mainbanner">
+    <div class="blackbox">
+      <img src="../img/visual_text.png" alt="">
+    </div>
+    <div class="menuteb">
+      <div>
+        <img src="..//img/quick0_on.png" alt="">
+        <p>위치/교통편</p>
+      </div>
+      <div>
+        <img src="../img/quick1_on.png" alt="">
+        <p>층별안내</p>
+      </div>
+      <div>
+        <img src="../img/quick2_on.png" alt="">
+        <p>편의시설</p>
+      </div>
+      <div>
+        <img src="../img/quick3_on.png" alt="">
+        <p>단체관람</p>
+      </div>
+      <div>
+        <img src="../img/quick4_on.png" alt="">
+        <p>장애인관람</p>
+      </div>
+      <div>
+        <img src="../img/quick5_on.png" alt="">
+        <p>문의하기</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contents">
+    <div class="contentsbox">
+      <h2>사이버체험</h2>
+      <img src="../img/img6.png" alt="">
+    </div>
+    <div class="contentsbox">
+      <h2>운영시간</h2>
+      <img src="../img/img9.png" alt="">
+    </div>
+    <div class="contentsbox">
+      <h2>교육프로그램</h2>
+      <img src="../img/img5.png" alt="">
+    </div>
+    <div class="contentsbox">
+      <h2>홍보영상</h2>
+      <div class="more">
+        <img src="../img/btn_more.png" alt="">
+      </div>
+      <img src="../img/img7.png" alt="">
+    </div>
+    <div class="contentsbox">
+      <h2>문화행사</h2>
+      <div class="more">
+        <img src="../img/btn_more.png" alt="">
+      </div>
+      <img src="../img/img8.png" alt="">
+    </div>
+    <div class="contentsbox">
+      <h2>전시관소식</h2>
+      <div class="more">
+        <img src="../img/btn_more.png" alt="">
+      </div>
+      <div class="memoboard">
+
+        <p>
+          <a href="#">
+            [공지] 야구발전 전시관 개관 및 휴관일정 안내
+          </a>
+          <span>2019.04.22</span>
+        </p>
+        <p>
+          <a href="#">
+            [행사안내] 3월, 4월 스포츠 공연 전시관에 봄이
+          </a>
+          <span>2019.04.22</span>
+        </p>
+        <p>
+          <a href="#">
+            [자료구매] 2018년 제 3차 VR체험관 예정 자료
+          </a>
+          <span>2019.04.22</span>
+        </p>
+        <p>
+          <a href="#">
+            [이벤트 종료] 야구발전전시관 전시관람 후기
+          </a>
+          <span>2019.04.22</span>
+        </p>
+        <p>
+          <a href="#">
+            [자료구매] 2018년 야구발전전시관 기념 구매
+          </a>
+          <span>2019.04.22</span>
+        </p>
+        <p>
+          <a href="#">
+            [교육] 봄방학 어린이 야구교실
+          </a>
+          <span>2019.04.22</span>
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <img src="../img/footer_logo.png" alt="">
+    <div class="footertext">
+      <p>서울특별시 서초구 서초대로77길 3 / 대표전화 02-530-8556
+        <a href="#">개인정보처리방침</a>
+        <br>
+      <p class="copy">Copyright ⓒ 야구발전전시관</p>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
