@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>차가 필요한 모든 순간, 쏘카</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    header{
+      width: 100%;
+      background: url(../img/socar/main_visual_fullscreen.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+      height: 100vh;
+    }
+    h1{
+      display: none;
+    }
+    nav{
+      height: 70px;
+      position: relative;
+    }
+    .logo{
+      width: 130px;
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    .text{
+      text-align: center;
+      font-size: 50px;
+      line-height: 70px;
+      color: azure;
+      position: absolute;
+      font-weight: bold;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .photo{
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .info{
+      margin-top: 60px;
+    }
+
+    .info>img{
+      width: 800px;
+      display: block;
+    }
+
+    h2{
+      font-size: 28px;
+      font-weight: bold;
+      color: #374553;
+      line-height: 60px;
+    }
+
+    h2>span{
+      color: #0bb8ff;
+      font-size: 55px;
+    }
+
+    .info>p{
+      color: gray;
+      font-size: 13px;
+      line-height: 20px;
+      margin-bottom: 30px;
+    }
+
+    .count{
+      width: 100%;
+      height: 450px;
+      background-color: #f7f8f9;
+      position: relative;
+      margin-top: 60px;
+    }
+    
+    .count>p{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #ababab;
+      font-size: 36px;
+      line-height: 55px;
+    }
+
+    .count>p>span{
+      color: #0bb8ff;
+    }
+
+    .count>p>span:first-child{
+      font-weight: bold;
+    }
+    
+    footer{
+      width: 100%;
+      height: 350px;
+      background-color: #28323c;
+      overflow: hidden;
+      padding: 40px 70px;
+      box-sizing: border-box;
+    }
+
+    .icon>a>img{
+      width: 30px;
+      margin-left: 10px;
+    }
+
+    .icon>a>img:first-child{
+    }
+
+    .footercontainer{
+      width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .bottommenu{
+      display: flex;      
+      justify-content: space-around;
+    }
+    .gray{
+      color: lightgray;
+      text-decoration: none;
+      line-height: 50px;
+    }
+
+    .white{
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      line-height: 50px;
+    }
+
+    .bottominfo{
+      padding: 10px;
+      font-size: 14px;
+      line-height: 22px;
+      display: flex;
+      color: gray;
+    }
+    .tel{
+      width: 550px;
+    }
+
+    .company{
+      width: 550px;
+    }
+
+    .company>p>a{
+      color: lightgray;
+      font-size: 13px;
+    }
+
+    .download{
+      position: relative;
+    }
+    .downloadbox{
+      width: 350px;
+      height: 90px;
+      background-color: #0bb8ff;
+      transform: skew(-30deg);
+      position: fixed;
+      bottom: 0px;
+      right: -60px;
+    }
+    
+    .download>p{
+      bottom: 22px;
+      right: -60px;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      position: fixed;
+    }
+
+    .app{
+      width: 70px;
+      height: 70px;
+      background-color: white;
+      border-radius: 30%;
+      position: fixed;
+      bottom: 10px;
+      right: 250px;
+      box-shadow: 1px 1px 8px #014e6d69;
+    }
+
+    .app>img{
+      width: 55px;
+      margin: 7px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>socar</h1>
+      <a href="#" class="logo">
+        <img src="../img/socar/logo-w.svg" alt="">
+      </a>
+      <div class="memu">
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <div class="text">
+      <P>
+        차가 필요한 <br> 모든 순간, 쏘카
+      </P>
+    </div>
+  </header>
+  <section class="photo">
+    <div class="info">
+      <h2>24시간 언제나<span>.</span></h2>
+      <p>한밤중이나 주말에도 스마트폰으로<br>시간에 구애받지 않고<br>쏘카와 함께 이동하세요.</p>
+      <img src="../img/socar/usp_a.jpg" alt="">
+    </div>
+    <div class="info">
+      <h2>원하는 곳에서<span>.</span></h2>
+      <p>내 주변 3분 거리 쏘카존에서<br>혹은 내가 있는 곳으로 쏘카를 불러<br>어디서나 편하게 출발하세요.</p>
+      <img src="../img/socar/usp_b.jpg" alt="">
+    </div>
+    <div class="info">
+      <h2>필요한 시간만큼 <span>.</span></h2>
+      <p>간단한 장보기부터 주말여행까지<br>10분 단위로 원하는 만큼만 이용하세요.</p>
+      <img src="../img/socar/usp_c.jpg" alt="">
+    </div>
+    <div class="info">
+      <h2>디양한 차종을 <span>.</span></h2>
+      <p>연인과의 드라이브부터 가족 캠핑까지<br>상황에 맞게 50여 종의 차량을<br>선택해서 이용하세요.</p>
+      <img src="../img/socar/usp_d.jpg" alt="">
+    </div>
+  </section>
+  <section class="count">
+    <div class="countbackground">
+    </div>
+    <p>
+      <span>7,586,684</span>명의 회원이 쏘카와 <br> 함께하고 있습니다. <br> 지금바로 <span>쏘카 드라이브</span>를 <br> 시작하세요.
+    </p>
+  </section>
+  <footer>
+    <div class="footercontainer">
+      <div class="icon">
+        <a href="">
+          <img src="../img/socar/i-instagram.svg" alt="">
+        </a>
+        <a href="">
+          <img src="../img/socar/i-facebook.svg" alt="">
+        </a>
+        <a href="">
+          <img src="../img/socar/i-youtube.svg" alt="">
+        </a>
+        <a href="">
+          <img src="../img/socar/i-blog.svg" alt=""
+          ></a>
+      </div>
+      <div class="bottommenu">
+        <a href="" class="gray">회사소개</a>
+        <a href="" class="gray">인재채용</a>
+        <a href="" class="gray">나눔카</a>
+        <a href="" class="gray">이용약관</a>
+        <a href="" class="white">개인정보처리방침</a>
+        <a href="" class="white">위치정보 이용약관</a>
+        <a href="" class="white">차량손해면책제도</a>
+        <a href="" class="gray">고객센터</a>
+        <a href="" class="gray">제휴 문의</a>
+        <a href="" class="gray">공고</a>
+      </div>
+      <div class="bottominfo">
+        <div class="tel">
+          <p>
+            주소.제주특별자치도 제주시 연미길 42 (오라삼동) <br>
+            전화. 1661-3314 <br>
+            팩스. 02-6969-9333 <br>
+          </p>
+        </div>
+       
+        <div class="company">
+          <p>
+            (주)쏘카 통신판매업 <a href="">사업자정보 확인</a><br>
+            신고: 제 2019-제주오라-3호, 사업자등록번호: 616-81-90529, 대표자: 박재욱<br>
+            ⓒ 2019 SOCAR All right reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="download">
+    <div class="downloadbox">
+    </div>
+    <p>쏘카 앱 다운로드 ↓</p>
+    <div class="app">
+      <img src="../img/socar/i-appicon.svg" alt="">
+    </div>
+  </div>
+</body>
+</html>
