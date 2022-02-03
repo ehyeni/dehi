@@ -128,9 +128,6 @@
       margin-left: 10px;
     }
 
-    .icon>a>img:first-child{
-    }
-
     .footercontainer{
       width: 1000px;
       margin: 0 auto;
@@ -212,6 +209,68 @@
       margin: 7px;
     }
 
+    /* 가상요소 ::before ::after 요소의 전후 내용을 지정할 수 있다
+       항상 content:""; 가 따라오는데 이곳에 요소의 내용을 정해주며 인라인 속성이라
+       도형을 그리고싶다면 블록 속성으로 바꿔주어야함!  */
+
+    .rightmenu{
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translate(0, -65%);
+    }
+
+    #berger-click {
+      opacity: 0; /* 클릭하는 체크박스를 투명으로 바꿔줌 */
+    }
+    
+    /* 가상요소의 기준이 되는 div의 속성을 정해줌 이 안에 들어갈 선들이 이 박스를 기준할 수 있도록 포지션 정해줌*/
+    .hamberger {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    /* 클릭 전 비포 에프터 요소의 모습을 정해줌 포지션 앱솔루트를 하여 박스안에서 위치를 자유롭게 정할 수 있게 됨 */
+    .hamberger::after, .hamberger::before {
+      content: "";
+      width: 25px;
+      height: 4px;
+      display: block;
+      background-color: white;
+      transition: 0.2s;
+      position: absolute;
+      transform-origin: top left; /* 변형되는 축을 X축은 top Y축은 left로 지정하지 않으면 엑스자가 이상하게 반응됨 */
+    }
+
+    .hamberger::after {
+      top : 12px;
+      left: 2px;
+    }
+
+   .hamberger::before {
+     bottom: 12px;
+     right: 2px;
+    }
+
+    /* 이부분 작성방법이 어려움 공부 더하기 */
+
+    #berger-click:checked + label > .hamberger::after {
+      background-color: #0bb8ff;
+      top : 50%;
+      left : 50%;
+     transform: rotate(45deg) translate(-50%,-50%);
+    }
+
+    #berger-click:checked + label > .hamberger::before {
+      background-color: #0bb8ff;
+      top: 50%;
+      left: 50%;
+      transform: rotate(-45deg) translate(-50%,-50%);
+    }
+
+
   </style>
 </head>
 <body>
@@ -221,16 +280,22 @@
       <a href="#" class="logo">
         <img src="../img/socar/logo-w.svg" alt="">
       </a>
-      <div class="memu">
-        <span></span>
-        <span></span>
+      <!-- 햄버거 영역 -->
+      <div class="rightmenu">
+        <input type="checkbox" name="rightmenu" id="berger-click" />
+        <label for="berger-click">
+            <div class="hamberger"></div>
+        </label>
       </div>
+
     </nav>
     <div class="text">
       <P>
         차가 필요한 <br> 모든 순간, 쏘카
       </P>
     </div>
+
+
   </header>
   <section class="photo">
     <div class="info">
