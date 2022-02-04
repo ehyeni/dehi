@@ -17,13 +17,19 @@
       overflow: hidden;
       height: 100vh;
     }
-    h1{
-      display: none;
-    }
+
     nav{
       height: 70px;
       position: relative;
     }
+
+    h1>span{
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+    }
+
     .logo{
       width: 130px;
       position: absolute;
@@ -277,15 +283,18 @@
 <body>
   <header>
     <nav>
-      <h1>socar</h1>
-      <a href="#" class="logo">
-        <img src="../img/socar/logo-w.svg" alt="">
-      </a>
+      <h1>
+        <a href="#" class="logo">
+          <img src="../img/socar/logo-w.svg" alt="">
+        </a>
+        <span>SOCAR</span>
+      </h1>
       <!-- 햄버거 영역 -->
       <div class="rightmenu">
         <input type="checkbox" name="rightmenu" id="berger-click" />
         <label for="berger-click">
-            <div class="hamberger"></div>
+            <div class="hamberger">
+            </div>
         </label>
       </div>
 
