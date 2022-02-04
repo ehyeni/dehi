@@ -176,9 +176,55 @@
       color: lightgray;
       font-size: 13px;
     }
+    .hidden_menu{
+      position: relative;
+    }
+    
+    .hidden{
+      width:0px;
+      height: 100vh;
+      background-color: #28323c;
+      position: fixed;
+      right: 0px;
+      top: 0px;
+    }
+    
+    .hidden>div{
+      width: 400px;
+      padding: 20px 40px;
+      height: 100vh;
+    }
+    
+    .line{
+      width: 300px;
+      height: 1px;
+      margin: 8px 0;
+      background-color: rgba(215, 217, 219, 0.2);
+    }
+
+    .hidden>div>a{
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      display: block;
+      line-height: 48px;
+    }
+
+
+    .download>p{
+      bottom: 22px;
+      right: -60px;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      position: fixed;
+    }
 
     .download{
       position: relative;
+      z-index: 999;
     }
     .downloadbox{
       width: 350px;
@@ -190,16 +236,7 @@
       right: -60px;
     }
     
-    .download>p{
-      bottom: 22px;
-      right: -60px;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-      position: fixed;
-    }
-
+    
     .app{
       width: 70px;
       height: 70px;
@@ -210,12 +247,12 @@
       right: 250px;
       box-shadow: 1px 1px 8px #014e6d69;
     }
-
+    
     .app>img{
       width: 55px;
       margin: 7px;
     }
-
+    
     /* 171p 가상요소 선택자 ::before ::after div같은 요소의 전후 내용을 지정할 수 있다.
        항상 content:""; 가 따라오는데 이곳에 요소의 내용도 정해줄 수 있으며
        비포 에프터는 인라인 속성이라 도형을 그리고싶다면 블록 속성으로 바꿔주어야함!  */
@@ -225,6 +262,7 @@
       right: 30px;
       top: 50%;
       transform: translate(0, -65%);
+      z-index: 900;
     }
 
     #berger-click {
@@ -278,6 +316,11 @@
       left: 50%;
       transform: rotate(-45deg) translate(-50%,-50%);
     }
+
+    #berger-click:checked + .hidden {
+      width:350px;
+    }
+
 
 
   </style>
@@ -394,5 +437,23 @@
       <img src="../img/socar/i-appicon.svg" alt="">
     </div>
   </div>
+  <section class="hidden_menu">
+    <div class="hidden">
+      <div>
+        <a href="">이용안내</a>
+        <a href="">요금안내</a>
+        <a href="">혜택안내</a>
+        <a href="">쏘카존 개설 신청</a>
+        <div class="line"></div>
+        <a href="">쏘카의 서비스</a>
+        <a href="">쏘카의 비지니스</a>
+        <a href="">쏘카 플랜</a>
+        <div class="line"></div>
+        <a href="">회사소개</a>
+        <a href="">IR</a>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
