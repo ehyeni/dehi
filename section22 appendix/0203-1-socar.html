@@ -65,10 +65,10 @@
     }
 
     h2{
-      font-size: 28px;
+      font-size: 38px;
       font-weight: bold;
       color: #374553;
-      line-height: 60px;
+      margin-bottom: 24px;
     }
 
     h2>span{
@@ -78,9 +78,9 @@
 
     .info>p{
       color: gray;
-      font-size: 13px;
-      line-height: 20px;
-      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 48px;
     }
 
     .count{
@@ -117,6 +117,7 @@
       transform: skew(-30deg);
       position: absolute;
       right: -250px;
+      overflow: hidden;
 
     }
     
@@ -158,7 +159,7 @@
 
     .bottominfo{
       padding: 10px;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 22px;
       display: flex;
       color: gray;
@@ -236,6 +237,7 @@
       height: 40px;
       position: relative;
       cursor: pointer;
+      display: block;
     }
 
     /* 클릭 전 비포 에프터 요소의 모습을 정해줌 포지션 앱솔루트를 하여 박스안에서 위치를 자유롭게 정할 수 있게 됨 */
@@ -293,8 +295,9 @@
       <div class="rightmenu">
         <input type="checkbox" name="rightmenu" id="berger-click" />
         <label for="berger-click">
-            <div class="hamberger">
-            </div>
+          <!-- 라벨 안에는 div가 들어갈 수 없어서 span으로 지정하고 이 스펜을 디스플레이 : 블록 으로 지정해줌 -->
+            <span class="hamberger">
+            </span>
         </label>
       </div>
 
