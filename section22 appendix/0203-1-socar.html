@@ -176,9 +176,8 @@
       color: lightgray;
       font-size: 13px;
     }
-    .hidden_menu{
-      position: relative;
-    }
+
+    
     
     .hidden{
       width:0px;
@@ -201,7 +200,7 @@
       margin: 8px 0;
       background-color: rgba(215, 217, 219, 0.2);
     }
-
+    
     .hidden>div>a{
       font-size: 18px;
       font-weight: bold;
@@ -211,6 +210,25 @@
       line-height: 48px;
     }
 
+    .blackback{
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      opacity: 0;
+      position: fixed;
+      top: 0;
+    }
+
+    /* 왜작동을 안할까.. */
+    
+    #berger-click:checked ~ .hidden {
+      width: 350px;
+    }
+    
+    #berger-click:checked ~ .blackback {
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 100%;
+    }
 
     .download>p{
       bottom: 22px;
@@ -317,9 +335,6 @@
       transform: rotate(-45deg) translate(-50%,-50%);
     }
 
-    #berger-click:checked + .hidden {
-      width:350px;
-    }
 
 
 
@@ -343,15 +358,30 @@
             </span>
         </label>
       </div>
-
     </nav>
+
+      <div class="hidden">
+        <div>
+          <a href="">이용안내</a>
+          <a href="">요금안내</a>
+          <a href="">혜택안내</a>
+          <a href="">쏘카존 개설 신청</a>
+          <div class="line"></div>
+          <a href="">쏘카의 서비스</a>
+          <a href="">쏘카의 비지니스</a>
+          <a href="">쏘카 플랜</a>
+          <div class="line"></div>
+          <a href="">회사소개</a>
+          <a href="">IR</a>
+        </div>
+      </div>
+      <div class="blackback"></div>
+
     <div class="text">
       <P>
         차가 필요한 <br> 모든 순간, 쏘카
       </P>
     </div>
-
-
   </header>
   <section class="photo">
     <div class="info">
@@ -437,23 +467,7 @@
       <img src="../img/socar/i-appicon.svg" alt="">
     </div>
   </div>
-  <section class="hidden_menu">
-    <div class="hidden">
-      <div>
-        <a href="">이용안내</a>
-        <a href="">요금안내</a>
-        <a href="">혜택안내</a>
-        <a href="">쏘카존 개설 신청</a>
-        <div class="line"></div>
-        <a href="">쏘카의 서비스</a>
-        <a href="">쏘카의 비지니스</a>
-        <a href="">쏘카 플랜</a>
-        <div class="line"></div>
-        <a href="">회사소개</a>
-        <a href="">IR</a>
-      </div>
-    </div>
-  </section>
+
 
 </body>
 </html>
