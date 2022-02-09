@@ -3,23 +3,19 @@
 header{
   width: 100%;
   height: 70px;
-  position: relative;
   background-color: #f7f8fa;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 h1{
   float: left;
-  position: relative;
   height: 70px;
 }
 .logo{
 	background: url('../img/naverband/spr_intro.png') no-repeat 0 -98px;
 	width: 78px;
 	height: 29px;
-  position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  left: 24px;
 }
 header>h1>span{
  width: 1px;
@@ -29,10 +25,7 @@ header>h1>span{
 }
 
 .topnav{
-  position: absolute;
-  top:50%;
-  right: 32px;
-  transform: translateY(-50%);
+  float: right;
 }
 
 .topnav>a{
@@ -44,7 +37,6 @@ header>h1>span{
 #language{
   background-color: #00000000;
   border: none;
-  line-height: 42px;
   font-size: 15px;
   margin-right: 26px;
   cursor: pointer;
@@ -52,6 +44,7 @@ header>h1>span{
 }
 
 .topnav>button{
+  height: 35px;
   cursor: pointer;
   font-size: 14px;
   line-height: 35px;
@@ -67,51 +60,52 @@ header>h1>span{
   box-shadow: 0.5px 0.5px 9px 0.1px #21c531;
 }
 
-/* 로그인 */
+/* 회원가입 */
 
-.login{
+.join{
   width: 100%;
   height: 767px;
   background-color: #f7f8fa;
 }
 
-.logincontainer{
-  width: 930px;
+.joincontainer{
+  width: 950px;
   margin: 0 auto;
-  padding-top: 65px;
+  padding-top: 70px;
 }
 
-.login>.logincontainer>figure{
+.join>.joincontainer>figure{
   margin-right: 40px;
   float: left;
 }
 
-.login>.logincontainer>figure>img{
+.join>.joincontainer>figure>img{
   width: 540px;
 }
 
-.loginbox{
-  width: 350px;
+.joinbox{
+  width: 370px;
   float: left;
-  padding-top: 30px;
 }
 
-.loginbox>h2{
-  font-size: 45px;
+.joinbox>h2{
+  font-size: 48px;
   line-height: 54px;
   margin-top: 16px;
 }
 
-.loginbox>p{
-  line-height: 54px;
+.joinbox>p{
+  margin: 24px 0;
 }
 
 .text{
   display: block;
-  line-height: 48px;
+  height: 48px;
+  font-size: 16px;
+  color: #f5f5f5;
   width: 320px;
   border: none;
-  border-bottom: black;
+  border-bottom: #f5f5f5 solid 1px;
   padding-left: 16px;
 }
 
@@ -123,4 +117,261 @@ header>h1>span{
   margin-top: 16px;
   color: white;
   font-size: 16px;
+}
+
+.facebook{
+  background: url('../img/naverband/spr_intro.png') no-repeat -3px -131px;
+	width: 17px;
+	height: 18px;
+  float: left;
+  margin: 0 8px;
+}
+
+.naver{
+  background: url('../img/naverband/spr_intro.png') no-repeat -186px -100px;
+  width: 19px;
+  height: 18px;
+  float: left;
+  margin: 0 8px;
+}
+
+.joinbox>button{
+  width: 167px;
+  height: 48px;
+  margin-top: 16px;
+  border: #ebebeb solid 1px;
+  background-color: white;
+}
+.login{
+  font-size: 13px;
+}
+
+.login>a{
+  color: #21c531;
+}
+
+/* 섹션 1 */
+
+.section1{
+  width: 100%;
+  height: 550px;
+  background: url(../img/naverband/bg_intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding-top: 200px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.section1>h2{
+  font-size: 48px;
+  color: white;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.section1>p{
+  color: white;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* 섹션 2 */
+
+.section2{
+  width: 100%;
+  height: 366px;
+  padding-top: 58px;
+  box-sizing: border-box;
+}
+
+.infocontainer{
+  width: 996px;
+  margin: 0px auto;
+}
+
+.bandinfo{
+  width: 300px;
+  float: left;
+  margin-right: 48px;
+}
+
+.bandinfo:last-child{
+  margin-right: 0;
+}
+
+.bandinfo>figure>img{
+  width: 300px;
+}
+
+.bandinfo>h3{
+  font-size: 24px;
+  margin: 12px 0px;
+}
+
+.bandinfo>p{
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/* 섹션 3 */
+
+.section3{
+  width: 100%;
+  height: 800px;
+  background-color: #eef0f3;
+  padding-top: 56px;
+  box-sizing: border-box;
+}
+
+.section3container{
+  width: 1000px;
+  margin: 0 auto;
+
+}
+
+.section3top{
+  width: 1000px;
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.section3top>a{
+  float: right;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  line-height: 18px;
+}
+
+.section3top>a>div{
+  background: url('../img/naverband/spr_intro.png') no-repeat -209px -98px;
+	width: 22px;
+	height: 22px;
+  float: right;
+  margin-left: 4px;
+}
+
+.section3top>h2{
+  width: 230px;
+  height: 40px;
+  font-size: 24px;
+  display: inline;
+}
+
+/* 섹션3의 메뉴 */
+
+ul{
+  margin: 24px 0;
+}
+
+li{
+  width: 500px;
+  margin: 16px 0;
+  float: left;
+}
+
+li>a>img{
+  width: 93px;
+  float: left;
+  margin-right: 12px;
+}
+
+li>a{
+  text-decoration: none; 
+}
+
+.line4>a>p{
+  margin-bottom: 9px;
+}
+
+.line3>a>p{
+  margin-bottom: 14px;
+}
+
+.line3>a>.bandname{
+  margin-top: 8px;
+}
+
+.bandname{
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+}
+
+.bandname:hover{
+  text-decoration: underline;
+}
+.bandtext{
+  font-size: 13px;
+  color: black;
+}
+
+.member{
+  font-size: 12px;
+  color: gray;
+}
+
+li>a>button{
+  height: 24px;
+  background-color: white;
+  border-radius: 20px;
+  border: #eef0f3;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 8px;
+  cursor: pointer;
+  border: #eef0f3 solid 1px;
+}
+
+li>a>button:hover{
+  border: gray solid 1px;
+}
+
+.more{
+  color: gray;
+  margin-left: 4px;
+  font-weight: 200;
+}
+
+/* 섹션4 */
+.section4{
+  width: 100%;
+  height: 130px;
+  background-color: white;
+}
+
+.bandgreenlogo{
+  background: url('../img/naverband/spr_intro.png') no-repeat -162px 0;
+	width: 70px;
+	height: 70px;
+  float: left;
+}
+
+.google{
+  background: url('../img/naverband/spr_intro.png') no-repeat 0 0;
+	width: 160px;
+	height: 47px;
+  float: left;
+}
+
+.section4 a{
+  display: block;
+}
+
+.appstore{
+  background: url('../img/naverband/spr_intro.png') no-repeat 0 -49px;
+	width: 160px;
+	height: 47px;
+  float: left;
+}
+/* 하단 */
+
+footer{
+  width: 100%;
+  height: 120px;
+  background-color: #2a3038; 
 }
