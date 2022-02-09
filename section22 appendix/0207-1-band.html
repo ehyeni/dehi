@@ -16,7 +16,7 @@
       </a>
       <span>BAND</span>
     </h1>
-    <nav>
+    <nav class="topnav">
       <select name="language" id="language">
         <option>한국어</option>
         <option>日本語</option>
@@ -29,26 +29,29 @@
       </button>
     </nav>
   </header>
-    <main>
-      <figure>
-       <img src="../img/naverband/bg_sloganImg.jpg" alt="">
-      </figure>
-      <div class="loginbox">
-       <h2>모임이 쉬워진다!<br>우리끼리 밴드</h2>
-       <p>당신의 모임도 BAND로 시작하세요</p>
-       <form class="logininput">
-       <input type="text" value="휴대폰 번호 또는 이메일로 가입">
-       <input type="password" value="비밀번호">
-       <input type="text" value="이름">
-       <input type="text" value="생일">
-       <input type="submit" value="회원가입">
-       </form>
-       <button><div class="facebook"></div>페이스북으로 가입</button>
-       <button><div class="naver"></div>네이버로 가입</button>
-       <p>이미 가입하셨나요?</p>
-       <a href="#">로그인하기</a>
-     </div>
-    </main>
+  <div class="login">
+      <div class="logincontainer">        
+        <figure>
+         <img src="../img/naverband/bg_sloganImg.jpg" alt="">
+        </figure>
+        <div class="loginbox">
+         <h2>모임이 쉬워진다!<br>우리끼리 밴드</h2>
+         <p>당신의 모임도 BAND로 시작하세요.</p>
+         <form class="logininput">
+           <!-- placeholder 입력필드란에 처음부터 표시되어있는 기본값 / 폰트가 기본적으로 그레이-->
+           <input type="text" class="text" placeholder="휴대폰 번호 또는 이메일로 가입">
+           <input type="password" class="text" placeholder="비밀번호">
+           <input type="text" class="text" placeholder="이름">
+           <input type="text" class="text" placeholder="생일">
+           <input type="submit" class="push" value="회원가입">
+         </form>
+         <button><div class="facebook"></div>페이스북으로 가입</button>
+         <button><div class="naver"></div>네이버로 가입</button>
+         <p>이미 가입하셨나요?</p>
+         <a href="#">로그인하기</a>
+       </div>
+      </div>
+    </div>
 
     <section class="section1">
       <h2>모임을 위한 공간, 밴드</h2>
@@ -196,15 +199,17 @@
 
     <section class="section4">
       <div class="bandgreenlogo"></div>
-      <h2>밴드 앱을 다운로드 하세요!</h2>
-      <p>당신의 모임도 BAND로 시작하세요.</p>
-      <div class="google"></div>
-      <div class="appstore"></div>
+      <div class="down">
+        <h2>밴드 앱을 다운로드 하세요!</h2>
+        <p>당신의 모임도 BAND로 시작하세요.</p>
+      </div>
+      <a class="google"></a> <!-- 에이태그 블록속성으로 변환 -->
+      <a class="appstore"></a>
 
     </section>
 
     <footer>
-      <div class="footermemu">
+      <nav class="footermemu">
         <a href="">블로그</a>
         <a href="">스티커제안</a>
         <a href="">광고</a>
@@ -218,7 +223,7 @@
         <a href="">개발자</a>
         <a href="">도움말</a>
         <p>BAND ⓒ 2022</p>  
-      </div>
+      </nav>
     </footer>
 
 </body>
