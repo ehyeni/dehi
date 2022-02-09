@@ -62,9 +62,9 @@ header>h1>span{
   font-weight: bold;
 }
 
-.topnav>button :hover{
+.topnav button:hover{
   cursor: pointer;
-  box-shadow: 2px 2px black;
+  box-shadow: 0.5px 0.5px 9px 0.1px #21c531;
 }
 
 /* 로그인 */
