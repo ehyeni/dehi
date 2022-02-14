@@ -109,6 +109,16 @@ header>h1>span{
   padding-left: 16px;
 }
 
+.text:nth-child(4){
+  border: none;
+}
+
+.textcocntainer{
+  width: 338px;
+  box-shadow: 2px 2px 8px rgba(193, 193, 193, 0.3);
+
+}
+
 .push{
   background-color: #21c531;
   line-height: 48px;
@@ -118,6 +128,12 @@ header>h1>span{
   color: white;
   font-size: 16px;
 }
+
+.push:hover{
+  cursor: pointer;
+  box-shadow: 0.5px 0.5px 9px 0.1px #21c531;
+}
+
 
 .facebook{
   background: url('../img/naverband/spr_intro.png') no-repeat -3px -131px;
@@ -141,6 +157,10 @@ header>h1>span{
   margin-top: 16px;
   border: #ebebeb solid 1px;
   background-color: white;
+}
+
+.joinbox>button:hover{
+  box-shadow: 2px 2px 5px rgba(193, 193, 193, 0.3);
 }
 .login{
   font-size: 13px;
@@ -339,9 +359,12 @@ li>a>button:hover{
 
 /* 섹션4 */
 .section4{
-  width: 100%;
+  width: 1000px;
+  margin: 0 auto;
   height: 130px;
   background-color: white;
+  padding-top: 32px;
+  box-sizing: border-box;
 }
 
 .bandgreenlogo{
@@ -349,6 +372,30 @@ li>a>button:hover{
 	width: 70px;
 	height: 70px;
   float: left;
+  margin-right: 12px;
+}
+
+.section4>.down>h2{
+  font-size: 24px;
+  padding-top: 11px;
+}
+
+.section4>.down>p{
+  color: #666666;
+  font-size: 14px;
+  margin: 8px;
+}
+
+.down{
+height: 70px;
+width: 400px;
+float: left;
+}
+
+.app{
+  width: 332px;
+  float: right;
+  margin-top: 12px;
 }
 
 .google{
@@ -356,10 +403,8 @@ li>a>button:hover{
 	width: 160px;
 	height: 47px;
   float: left;
-}
-
-.section4 a{
-  display: block;
+  margin-right: 12px;
+  cursor: pointer;
 }
 
 .appstore{
@@ -367,11 +412,49 @@ li>a>button:hover{
 	width: 160px;
 	height: 47px;
   float: left;
+  cursor: pointer;
 }
+
+.section4 a{
+  display: block;
+}
+
 /* 하단 */
 
 footer{
   width: 100%;
   height: 120px;
   background-color: #2a3038; 
+  padding-top: 24px;
+  box-sizing: border-box;
 }
+
+.footermemu{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+footer>.footermemu>a{
+  text-decoration: none;
+  color: gray;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+footer>.footermemu>a:nth-child(5){
+  color: #b3b3b3;
+  font-weight: bold;
+}
+
+footer>.footermemu>p{
+  margin-top: 8px;
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.after::after{
+  content: '·';
+  margin: 0 8px;
+}
+
+
