@@ -1,0 +1,29 @@
+.leftmenu{
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.leftmenu_centerline{
+  width: 20px;
+  height: 1px;
+  background-color: black;
+}
+
+.leftmenu_centerline::after, .leftmenu_centerline::before{
+  content: '';
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  display: block;
+  position: absolute;
+}
+
+.leftmenu_centerline::before{
+  top:0px;
+}
+
+
+.leftmenu_centerline::after{
+  bottom:0px;
+}
