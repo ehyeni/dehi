@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="20220214-youtube.css">
 </head>
 <body>
+  <!-- 상단 헤더 -->
   <header>
     <div class="headerleft">
         <button class="leftmenu">
@@ -46,6 +47,13 @@
 
     <div class="headerright"> 
 
+      <button class="hidden">
+        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M20.87,20.17l-5.59-5.59C16.35,13.35,17,11.75,17,10c0-3.87-3.13-7-7-7s-7,3.13-7,7s3.13,7,7,7c1.75,0,3.35-0.65,4.58-1.71 l5.59,5.59L20.87,20.17z M10,16c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S13.31,16,10,16z" class="style-scope yt-icon"></path></g></svg>
+      </button>
+
+      <button class="hidden">
+        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12 3C10.34 3 9 4.37 9 6.07V11.93C9 13.63 10.34 15 12 15C13.66 15 15 13.63 15 11.93V6.07C15 4.37 13.66 3 12 3ZM18.5 12H17.5C17.5 15.03 15.03 17.5 12 17.5C8.97 17.5 6.5 15.03 6.5 12H5.5C5.5 15.24 7.89 17.93 11 18.41V21H13V18.41C16.11 17.93 18.5 15.24 18.5 12Z" class="style-scope yt-icon"></path></g></svg>
+      </button>
       <button>
         <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z M17,6H3v12h14v-6.39l4,1.83V8.56l-4,1.83V6 M18,5v3.83L22,7v8l-4-1.83V19H2V5H18L18,5 z" class="style-scope yt-icon"></path></g></svg>
       </button>
@@ -65,6 +73,7 @@
     </div>
   </header>
 
+  <!-- 동영상 부분 -->
   <div class="back">
     <section class="section1">
       <div class="video">
@@ -130,126 +139,437 @@
           <a href="#">#노래플레이리스트</a>
           <a href="#">#플레이리스트</a>
         </div>
-        <p>TIME LINE✨<br>
-          0:00:00 백예린 - Square(2017)<br>
-          0:04:21 폴킴 - 우리 제법 잘 어울려요<br>
-          0:07:28 네이비쿼카 - 내 맘은<br>
-          0:10:42 죠지 - Boat<br>
-          0:13:54 아이유 - 삐삐<br> 
-          0:17:08 정바스 - 해도 돼 (Feat. 플리지)<br></p>
-        </div>
-        <a class="more">더보기</a>
-    </section>
-    <aside>
-  
-      <div class="recommen">
-        <div class="recommen_img">
-          <img src="../img/youtube/hqdefault (1).webp" alt="">
-          <P>1:00:47</P>
-        </div>
-        <div class="recommen_text">
-          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
-          <p>아 퇴사하고싶다</p>
-          <p>조회수 43만회 · 2개월전</p>
-        </div>
-        <div class="recommen_hover">
-          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
-        </div>
       </div>
-  
-      <div class="recommen">
-        <div class="recommen_img">
-          <img src="../img/youtube/hqdefault (1).webp" alt="">
-          <P>1:00:47</P>
+
+      <!-- 가운데로 들어오는 추천영상 부분 -->
+      <div class="move_recommen_container">
+        <div class="move_recommen">
+          <div class="recommen_img">
+            <img src="../img/youtube/hqdefault (1).webp" alt="">
+            <span>1:00:47</span>
+          </div>
+          <div class="move_recommen_text">
+            <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트🎶 | 광고없는 노래모음 노동요 플레이리스트❣️</h3>
+            <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+          </div>
+          <button class="move_hover">
+            <figure>            
+              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+            </figure>
+          </button>
         </div>
-        <div class="recommen_text">
-          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
-          <p>아 퇴사하고싶다</p>
-          <p>조회수 43만회 · 2개월전</p>
+
+        <div class="move_recommen">
+          <div class="recommen_img">
+            <img src="../img/youtube/hqdefault (2).webp" alt="">
+            <span>1:00:47</span>
+          </div>
+          <div class="move_recommen_text">
+            <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트🎶 | 광고없는 노래모음 노동요 플레이리스트❣️</h3>
+            <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+          </div>
+          <button class="move_hover">
+            <figure>            
+              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+            </figure>
+          </button>
         </div>
-        <div class="recommen_hover">
-          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+
+        <div class="move_recommen">
+          <div class="recommen_img">
+            <img src="../img/youtube/hqdefault (3).webp" alt="">
+            <span>1:00:47</span>
+          </div>
+          <div class="move_recommen_text">
+            <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트🎶 | 광고없는 노래모음 노동요 플레이리스트❣️</h3>
+            <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+          </div>
+          <button class="move_hover">
+            <figure>            
+              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+            </figure>
+          </button>
         </div>
+
+        <div class="move_recommen">
+          <div class="recommen_img">
+            <img src="../img/youtube/hqdefault (4).webp" alt="">
+            <span>1:00:47</span>
+          </div>
+          <div class="move_recommen_text">
+            <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트🎶 | 광고없는 노래모음 노동요 플레이리스트❣️</h3>
+            <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+          </div>
+          <button class="move_hover">
+            <figure>            
+              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+            </figure>
+          </button>
+        </div>
+
+        <div class="move_recommen">
+          <div class="recommen_img">
+            <img src="../img/youtube/hqdefault (5).webp" alt="">
+            <span>1:00:47</span>
+          </div>
+          <div class="move_recommen_text">
+            <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트🎶 | 광고없는 노래모음 노동요 플레이리스트❣️</h3>
+            <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+          </div>
+          <button class="move_hover">
+            <figure>            
+              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+            </figure>
+          </button>
+        </div>
+
+        <div class="move_recommen">
+          <div class="recommen_img">
+            <img src="../img/youtube/hqdefault (6).webp" alt="">
+            <span>1:00:47</span>
+          </div>
+          <div class="move_recommen_text">
+            <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트🎶 | 광고없는 노래모음 노동요 플레이리스트❣️</h3>
+            <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+          </div>
+          <button class="move_hover">
+            <figure>            
+              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+            </figure>
+          </button>
+        </div>
+
+        <div class="move_recommen">
+          <div class="recommen_img">
+            <img src="../img/youtube/hqdefault (7).webp" alt="">
+            <span>1:00:47</span>
+          </div>
+          <div class="move_recommen_text">
+            <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트🎶 | 광고없는 노래모음 노동요 플레이리스트❣️</h3>
+            <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+          </div>
+          <button class="move_hover">
+            <figure>            
+              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+            </figure>
+          </button>
+        </div>
+
+        <div class="move_recommen">
+          <div class="recommen_img">
+            <img src="../img/youtube/hqdefault (8).webp" alt="">
+            <span>1:00:47</span>
+          </div>
+          <div class="move_recommen_text">
+            <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트🎶 | 광고없는 노래모음 노동요 플레이리스트❣️</h3>
+            <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+          </div>
+          <button class="move_hover">
+            <figure>            
+              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+            </figure>
+          </button>
+        </div>
+        <button>
+          더보기
+        </button>
       </div>
-  
-      <div class="recommen">
-        <div class="recommen_img">
-          <img src="../img/youtube/hqdefault (1).webp" alt="">
-          <P>1:00:47</P>
-        </div>
-        <div class="recommen_text">
-          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
-          <p>아 퇴사하고싶다</p>
-          <p>조회수 43만회 · 2개월전</p>
-        </div>
-        <div class="recommen_hover">
-          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
-        </div>
-      </div>
-  
-      <div class="recommen">
-        <div class="recommen_img">
-          <img src="../img/youtube/hqdefault (1).webp" alt="">
-          <P>1:00:47</P>
-        </div>
-        <div class="recommen_text">
-          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
-          <p>아 퇴사하고싶다</p>
-          <p>조회수 43만회 · 2개월전</p>
-        </div>
-        <div class="recommen_hover">
-          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
-        </div>
-      </div>
-  
-      <div class="recommen">
-        <div class="recommen_img">
-          <img src="../img/youtube/hqdefault (1).webp" alt="">
-          <P>1:00:47</P>
-        </div>
-        <div class="recommen_text">
-          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
-          <p>아 퇴사하고싶다</p>
-          <p>조회수 43만회 · 2개월전</p>
-        </div>
-        <div class="recommen_hover">
-          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
-        </div>
-      </div>
-      
-    </aside>
-  
-    <section class="secton2">
-      <p>댓글 228개</p>
-      <div class="Comment">
-        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M21,6H3V5h18V6z M15,11H3v1h12V11z M9,17H3v1h6V17z" class="style-scope yt-icon"></path></g></svg>
-        <p>정렬기준</p>
+
+      <!-- 가운데로 들어오는 추천영상 부분 -->
+
+      <div class="comment_count">
+        <span>댓글3개</span>
+        <button>
+          <figure>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M21,6H3V5h18V6z M15,11H3v1h12V11z M9,17H3v1h6V17z" class="style-scope yt-icon"></path></g></svg>
+          </figure>
+          <span>정렬기준</span>
+        </button>
       </div>
   
       <div class="Comment_push">
-        <div class="profile_img_comment">
+        <figure class="Comment_push_profile">
           <img src="../img/youtube/profile (8).jpg" alt="">
-          <form action="">
-            <input type="text">
-          </form>
+        </figure>
+        <form>
+          <input type="text" placeholder="공개 댓글 추가...">
+          <div class="push">
+            <input type="reset" value="취소">
+            <input type="submit" value="댓글">
+          </div>
+        </form>
+      </div>
+
+      <div class="commetcontainer">
+        <div class="comment_text">
+          <figure class="profile_img_comment">
+            <img src="../img/youtube/profile (5).jpg" alt="">
+          </figure>
+          <div class="comment">
+              <a href="#">눈맞</a>
+              <a href="#">5일 전</a>
+            <p>미쳤다.. 노래 너무 좋ටㅏ 버릴게 없어<br>
+              wow.. I think this playlist so good.<br>
+              everything is perfect. thank you made this playlist</p>
+            <div class="comment_reaction">
+              <figure class="Comment_icon">
+                <svg viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12.42,14A1.54,1.54,0,0,0,14,12.87l1-4.24C15.12,7.76,15,7,14,7H10l1.48-3.54A1.17,1.17,0,0,0,10.24,2a1.49,1.49,0,0,0-1.08.46L5,7H1v7ZM9.89,3.14A.48.48,0,0,1,10.24,3a.29.29,0,0,1,.23.09S9,6.61,9,6.61L8.46,8H14c0,.08-1,4.65-1,4.65a.58.58,0,0,1-.58.35H6V7.39ZM2,8H5v5H2Z" class="style-scope yt-icon"></path></g></svg>
+              </figure>
+              <figure class="Comment_icon">
+                <svg viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M3.54,2A1.55,1.55,0,0,0,2,3.13L1,7.37C.83,8.24,1,9,2,9H6L4.52,12.54A1.17,1.17,0,0,0,5.71,14a1.49,1.49,0,0,0,1.09-.46L11,9h4V2ZM6.07,12.86a.51.51,0,0,1-.36.14.28.28,0,0,1-.22-.09l0-.05L6.92,9.39,7.5,8H2a1.5,1.5,0,0,1,0-.41L3,3.35A.58.58,0,0,1,3.54,3H10V8.61ZM14,8H11l0-5h3Z" class="style-scope yt-icon"></path></g></svg>
+              </figure>
+              <P>답글</P>
+            </div>
         </div>
       </div>
-  
-      <div class="comment_text">
-        <div class="profile_img_comment">
-          <img src="../img/youtube/profile (5).jpg" alt="">
+      
+      <div class="commetcontainer">
+        <div class="comment_text">
+          <figure class="profile_img_comment">
+            <img src="../img/youtube/profile (6).jpg" alt="">
+          </figure>
+          <div class="comment">
+              <a href="#">shyar Kim</a>
+              <a href="#">7일 전</a>
+            <p>진짜  sweety cat알게된 이후 부터 여기 노래만 들어요ㅜㅜ썸네일도 너무 낭만나적이고 선곡들도 다 너무 좋아요ㅜㅜ사랑합니다!</p>
+            <div class="comment_reaction">
+              <figure class="Comment_icon">
+                <svg viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12.42,14A1.54,1.54,0,0,0,14,12.87l1-4.24C15.12,7.76,15,7,14,7H10l1.48-3.54A1.17,1.17,0,0,0,10.24,2a1.49,1.49,0,0,0-1.08.46L5,7H1v7ZM9.89,3.14A.48.48,0,0,1,10.24,3a.29.29,0,0,1,.23.09S9,6.61,9,6.61L8.46,8H14c0,.08-1,4.65-1,4.65a.58.58,0,0,1-.58.35H6V7.39ZM2,8H5v5H2Z" class="style-scope yt-icon"></path></g></svg>
+              </figure>
+              <figure class="Comment_icon">
+                <svg viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M3.54,2A1.55,1.55,0,0,0,2,3.13L1,7.37C.83,8.24,1,9,2,9H6L4.52,12.54A1.17,1.17,0,0,0,5.71,14a1.49,1.49,0,0,0,1.09-.46L11,9h4V2ZM6.07,12.86a.51.51,0,0,1-.36.14.28.28,0,0,1-.22-.09l0-.05L6.92,9.39,7.5,8H2a1.5,1.5,0,0,1,0-.41L3,3.35A.58.58,0,0,1,3.54,3H10V8.61ZM14,8H11l0-5h3Z" class="style-scope yt-icon"></path></g></svg>
+              </figure>
+              <P>답글</P>
+            </div>
         </div>
-        <a href="#">눈맞</a>
-        <a href="#">5일전</a>
-        <p>미쳤다.. 노래 너무 좋ටㅏ 버릴게 없어<br>
-          wow.. I think this playlist so good.<br>
-          everything is perfect. thank you made this playlist</p>
-        <svg viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12.42,14A1.54,1.54,0,0,0,14,12.87l1-4.24C15.12,7.76,15,7,14,7H10l1.48-3.54A1.17,1.17,0,0,0,10.24,2a1.49,1.49,0,0,0-1.08.46L5,7H1v7ZM9.89,3.14A.48.48,0,0,1,10.24,3a.29.29,0,0,1,.23.09S9,6.61,9,6.61L8.46,8H14c0,.08-1,4.65-1,4.65a.58.58,0,0,1-.58.35H6V7.39ZM2,8H5v5H2Z" class="style-scope yt-icon"></path></g></svg>
-        <svg viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M3.54,2A1.55,1.55,0,0,0,2,3.13L1,7.37C.83,8.24,1,9,2,9H6L4.52,12.54A1.17,1.17,0,0,0,5.71,14a1.49,1.49,0,0,0,1.09-.46L11,9h4V2ZM6.07,12.86a.51.51,0,0,1-.36.14.28.28,0,0,1-.22-.09l0-.05L6.92,9.39,7.5,8H2a1.5,1.5,0,0,1,0-.41L3,3.35A.58.58,0,0,1,3.54,3H10V8.61ZM14,8H11l0-5h3Z" class="style-scope yt-icon"></path></g></svg>
-        <P>답글</P>
       </div>
-  
+
+      <div class="commetcontainer">
+        <div class="comment_text">
+          <figure class="profile_img_comment">
+            <img src="../img/youtube/profile (4).jpg" alt="">
+          </figure>
+          <div class="comment">
+              <a href="#">seung yong Doo</a>
+              <a href="#">1개월 전</a>
+            <p>회사에서 음악들으면서 하는 회사 부럽 .. 집에서 자택 근무 하면서 듣고 있습니다.ㅜㅜ</p>
+            <div class="comment_reaction">
+              <figure class="Comment_icon">
+                <svg viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12.42,14A1.54,1.54,0,0,0,14,12.87l1-4.24C15.12,7.76,15,7,14,7H10l1.48-3.54A1.17,1.17,0,0,0,10.24,2a1.49,1.49,0,0,0-1.08.46L5,7H1v7ZM9.89,3.14A.48.48,0,0,1,10.24,3a.29.29,0,0,1,.23.09S9,6.61,9,6.61L8.46,8H14c0,.08-1,4.65-1,4.65a.58.58,0,0,1-.58.35H6V7.39ZM2,8H5v5H2Z" class="style-scope yt-icon"></path></g></svg>
+              </figure>
+              <figure class="Comment_icon">
+                <svg viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M3.54,2A1.55,1.55,0,0,0,2,3.13L1,7.37C.83,8.24,1,9,2,9H6L4.52,12.54A1.17,1.17,0,0,0,5.71,14a1.49,1.49,0,0,0,1.09-.46L11,9h4V2ZM6.07,12.86a.51.51,0,0,1-.36.14.28.28,0,0,1-.22-.09l0-.05L6.92,9.39,7.5,8H2a1.5,1.5,0,0,1,0-.41L3,3.35A.58.58,0,0,1,3.54,3H10V8.61ZM14,8H11l0-5h3Z" class="style-scope yt-icon"></path></g></svg>
+              </figure>
+              <P>답글</P>
+            </div>
+        </div>
+      </div>
+      
+      
+
+      
     </section>
+
+    <!-- 추천영상 -->
+    <aside>
+      
+      <div class="recommen">
+        <div class="recommen_img">
+          <img src="../img/youtube/hqdefault (1).webp" alt="">
+          <span>1:00:47</span>
+        </div>
+        <div class="recommen_text">
+          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
+          <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+        </div>
+        <button class="recommen_hover">
+          <figure>            
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+          </figure>
+        </button>
+      </div>
+
+      <div class="recommen">
+        <div class="recommen_img">
+          <img src="../img/youtube/hqdefault (2).webp" alt="">
+          <span>1:00:47</span>
+        </div>
+        <div class="recommen_text">
+          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
+          <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+        </div>
+        <button class="recommen_hover">
+          <figure>            
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+          </figure>
+        </button>
+      </div>
+
+
+      <div class="recommen">
+        <div class="recommen_img">
+          <img src="../img/youtube/hqdefault (3).webp" alt="">
+          <span>1:00:47</span>
+        </div>
+        <div class="recommen_text">
+          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
+          <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+        </div>
+        <button class="recommen_hover">
+          <figure>            
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+          </figure>
+        </button>
+      </div>
+
+      <div class="recommen">
+        <div class="recommen_img">
+          <img src="../img/youtube/hqdefault (4).webp" alt="">
+          <span>1:00:47</span>
+        </div>
+        <div class="recommen_text">
+          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
+          <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+        </div>
+        <button class="recommen_hover">
+          <figure>            
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+          </figure>
+        </button>
+      </div>
+
+      <div class="recommen">
+        <div class="recommen_img">
+          <img src="../img/youtube/hqdefault (5).webp" alt="">
+          <span>1:00:47</span>
+        </div>
+        <div class="recommen_text">
+          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
+          <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+        </div>
+        <button class="recommen_hover">
+          <figure>            
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+          </figure>
+        </button>
+      </div>
+
+      <div class="recommen">
+        <div class="recommen_img">
+          <img src="../img/youtube/hqdefault (6).webp" alt="">
+          <span>1:00:47</span>
+        </div>
+        <div class="recommen_text">
+          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
+          <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+        </div>
+        <button class="recommen_hover">
+          <figure>            
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+          </figure>
+        </button>
+      </div>
+
+      <div class="recommen">
+        <div class="recommen_img">
+          <img src="../img/youtube/hqdefault (7).webp" alt="">
+          <span>1:00:47</span>
+        </div>
+        <div class="recommen_text">
+          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
+          <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+        </div>
+        <button class="recommen_hover">
+          <figure>            
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+          </figure>
+        </button>
+      </div>
+
+      <div class="recommen">
+        <div class="recommen_img">
+          <img src="../img/youtube/hqdefault (8).webp" alt="">
+          <span>1:00:47</span>
+        </div>
+        <div class="recommen_text">
+          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
+          <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+        </div>
+        <button class="recommen_hover">
+          <figure>            
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+          </figure>
+        </button>
+      </div>
+
+      <div class="recommen">
+        <div class="recommen_img">
+          <img src="../img/youtube/hqdefault (9).webp" alt="">
+          <span>1:00:47</span>
+        </div>
+        <div class="recommen_text">
+          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
+          <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+        </div>
+        <button class="recommen_hover">
+          <figure>            
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+          </figure>
+        </button>
+      </div>
+
+      <div class="recommen">
+        <div class="recommen_img">
+          <img src="../img/youtube/hqdefault (13).webp" alt="">
+          <span>1:00:47</span>
+        </div>
+        <div class="recommen_text">
+          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
+          <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+        </div>
+        <button class="recommen_hover">
+          <figure>            
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+          </figure>
+        </button>
+      </div>
+
+      <div class="recommen">
+        <div class="recommen_img">
+          <img src="../img/youtube/hqdefault (11).webp" alt="">
+          <span>1:00:47</span>
+        </div>
+        <div class="recommen_text">
+          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
+          <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+        </div>
+        <button class="recommen_hover">
+          <figure>            
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+          </figure>
+        </button>
+      </div>
+
+      <div class="recommen">
+        <div class="recommen_img">
+          <img src="../img/youtube/hqdefault (12).webp" alt="">
+          <span>1:00:47</span>
+        </div>
+        <div class="recommen_text">
+          <h3>[Playlist] 일할 때 듣기좋은 적당히 신나는 2시간 플레이리스트...</h3>
+          <p>아 퇴사하고싶다<br>조회수 43만회 · 2개월전</p>
+        </div>
+        <button class="recommen_hover">
+          <figure>            
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z" class="style-scope yt-icon"></path></g></svg>
+          </figure>
+        </button>
+      </div>
+      
+      </div>
+      
+    </aside>
+
   </div>
 </body>
 </html>
