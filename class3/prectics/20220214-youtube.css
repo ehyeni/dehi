@@ -9,8 +9,7 @@ header{
   align-items: center;
   padding: 6px 24px;
   box-sizing: border-box;
-  background-color: white
-  ;
+  background-color: white;
 }
 
 /* 헤더 왼쪽 */
@@ -191,8 +190,7 @@ h1{
 
 
 .back{
-  width: 80%;
-  margin: 0 auto;
+  max-width: 1000px;
 }
 
 /* 동영상 영역 */
@@ -317,6 +315,3 @@ h2{
   font-size: 14px;
   color: #065fd4;
 }
-
-.more
-
