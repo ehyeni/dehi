@@ -191,6 +191,7 @@ h1{
 
 .back{
   max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* 동영상 영역 */
