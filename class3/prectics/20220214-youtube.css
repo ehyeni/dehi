@@ -100,6 +100,7 @@ h1{
   border-right: 0.5px;
   border-radius : 0.1em;
   position: relative;
+  margin-left: 24px;
 }
 
 .search_container>span{
@@ -521,7 +522,6 @@ aside{
 
 .Comment_push>form{
   width: 870px;
-
 }
 
 .Comment_push_profile>img{
@@ -533,7 +533,6 @@ aside{
 
 .Comment_push input[type='text']{
   border: none;
-  border-bottom: 0.5px solid rgb(39, 39, 39);
   background-color: #f9f9f9;
   width: 100%;
   font-size: 16px;
@@ -541,10 +540,34 @@ aside{
   outline: none;
 }
 
-.Comment_push input[type='text']:focus{
-  border-bottom: 2px solid black;
-  transition-duration: 0.4s;
+
+.line{
+  width: 0;
+  height: 1px;
+
 }
+
+.line_gray{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+.Comment_push input[type='text']:focus ~ .line{
+  width: 100%;
+  height: 1px;
+  background-color: #0a0a0a;
+  transition-duration: 0.3s;
+  transform-origin: -50% -50%;
+}
+
+.Comment_push input[type='text']:focus ~ .line_gray{
+  width: 100%;
+  height: 1x;
+  background-color: #0a0a0a;
+  transition-duration: 0.3s;
+}
+
 
 .push{
   margin-top: 8px;
@@ -557,6 +580,7 @@ aside{
   height: 40px;
   border: none;
   cursor: pointer;
+  margin-top: 12px;
 }
 
 .push>input[type='reset']{
