@@ -406,7 +406,7 @@ aside{
 
 }
 
-/* 움직이는 영역 */
+/* 가운데로 들어오는 추천영상 부분 */
 
 .move_recommen_container{
   padding: 24px 0;
@@ -480,6 +480,7 @@ aside{
   border: 1px solid #065fd4;
   color:#065fd4;
   font-size: 16px;
+  cursor: pointer;
 }
 
 /* 댓글 영역 */
