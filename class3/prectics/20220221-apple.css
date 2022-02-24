@@ -212,7 +212,7 @@ header{
 
 h1{
   text-align: center;
-  font-size: 80px;
+  font-size: 72px;
   font-weight: bold;
 }
 
@@ -228,7 +228,7 @@ h1{
   width: 374px;
   height: 218px;
   background-repeat: no-repeat;
-  margin: 38px 64px 80px 0    ;
+  margin: 38px 64px 80px 0;
 }
 
 .banner-1416{
@@ -298,16 +298,255 @@ h1{
   height: 1715px;
   background-color: var(--background-gray);
   padding: 110px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .choice-Mac>h2{
-  font-size: 48px;
+  font-size: 40px;
   text-align: center;
   font-weight: bold;
 }
 
-.mac13-img{
-  background: url();
+/* 그리드 이름 지정 13*/
+
+.choice-13-img{
+  grid-area: choice-13-img;
+}
+
+.choice-13-buybotton{
+  grid-area: choice-13-buybotton;
+}
+
+.choice-13-chip{
+  grid-area: choice-13-chip;
+}
+
+.choice-13-cpu{
+  grid-area: choice-13-cpu;
+}
+
+.choice-13-gpu{
+  grid-area: choice-13-gpu;
+}
+
+.choice-13-memory{
+  grid-area: choice-13-memory;
+}
+
+.choice-13-TB{
+  grid-area: choice-13-TB;
+}
+
+.choice-13-display{
+  grid-area: choice-13-display;
+}
+
+.choice-13-camera{
+  grid-area: choice-13-camera;
+}
+
+.choice-13-weight{
+  grid-area: choice-13-weight;
+}
+
+.choice-13-Touch-bar{
+  grid-area: choice-13-Touch-bar;
+}
+
+/* 그리드 이름 지정 14*/
+.choice-14-img{
+  grid-area: choice-14-img;
+}
+
+.choice-14-buybotton{
+  grid-area: choice-14-buybotton;
+}
+
+.choice-14-chip{
+  grid-area: choice-14-chip;
+}
+
+.choice-14-cpu{
+  grid-area: choice-14-cpu;
+}
+
+.choice-14-gpu{
+  grid-area: choice-14-gpu;
+}
+
+.choice-14-memory{
+  grid-area: choice-14-memory;
+}
+
+.choice-14-TB{
+  grid-area: choice-14-TB;
+}
+
+.choice-14-display{
+  grid-area: choice-14-display;
+}
+
+.choice-14-camera{
+  grid-area: choice-14-camera;
+}
+
+.choice-14-weight{
+  grid-area: choice-14-weight;
+}
+
+.choice-14-TouchID{
+  grid-area: choice-14-TouchID;
+}
+
+/* 그리드 이름 지정 16*/
+.choice-16-img{
+  grid-area: choice-16-img;
+}
+
+.choice-16-img{
+  grid-area: choice-16-img;
+}
+
+.choice-16-buybotton{
+  grid-area: choice-16-buybotton;
+}
+
+.choice-16-chip{
+  grid-area: choice-16-chip;
+}
+
+.choice-16-cpu{
+  grid-area: choice-16-cpu;
+}
+
+.choice-16-gpu{
+  grid-area: choice-16-gpu;
+}
+
+.choice-16-memory{
+  grid-area: choice-16-memory;
+}
+
+.choice-16-TB{
+  grid-area: choice-16-TB;
+}
+
+.choice-16-display{
+  grid-area: choice-16-display;
+}
+
+.choice-16-camera{
+  grid-area: choice-16-camera;
+}
+
+.choice-16-weight{
+  grid-area: choice-16-weight;
+}
+
+.choice-16-TouchID{
+  grid-area: choice-16-TouchID;
 }
 
 
+.how-to-choose{
+  width: 940px;
+  margin-top: 88px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(11, auto);
+  grid-row-gap: 39px;
+  grid-column-gap: 34px;
+  grid-template-areas:
+    "choice-13-img choice-14-img choice-16-img"
+    "choice-13-buybotton choice-14-buybotton choice-16-buybotton"
+    "choice-13-chip choice-14-chip choice-16-chip"
+    "choice-13-cpu choice-14-cpu choice-16-cpu"
+    "choice-13-gpu choice-14-gpu choice-16-gpu"
+    "choice-13-memory choice-14-memory choice-16-memory"
+    "choice-13-TB choice-14-TB choice-16-TB"
+    "choice-13-display choice-14-display choice-16-display"
+    "choice-13-camera choice-14-camera choice-16-camera"
+    "choice-13-weight choice-14-weight choice-16-weight"
+    "choice-13-Touch-bar choice-14-TouchID choice-16-TouchID";
+}
+
+.how-to-choose>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* 그리드 안에 이미지 삽입 */
+
+.mac13-img{
+  background: url(../img/apple/compare_mbp13__e0rrkgjx9zqu_large.png);
+  width: 212px;
+  height: 124px;
+}
+
+.mac14-img{
+  background: url(../img/apple/compare_mbp14__f17pgqjk7syi_large.png);
+  width: 214px;
+  height: 130px;
+}
+
+.mac16-img{
+  background: url(../img/apple/compare_mbp16__b991itovw9py_large.png);
+  width: 236px;
+  height: 146px;
+}
+
+.color-img{
+  background: url(../img/apple/compare_swatches_two_colors__ixtvuxzl4si2_large.png);
+  width: 32px;
+  height: 14px;
+}
+
+.m1-img{
+  background: url(../img/apple/compare_icon_m1__e07cz83uttaq_large.png);
+  width: 48px;
+  height: 40px;
+}
+
+.m1-pro-img{
+  background: url(../img/apple/compare_icon_m1_pro_max__bzfwqn8nwb2a_large.png);
+  width: 90px;
+  height: 40px;
+}
+
+.memory-img{
+  background: url(../img/apple/compare_icon_unified_memory__ffifjo8779u2_large.png);
+  width: 48px;
+  height: 44px;
+}
+
+.battery-img{
+  background: url(../img/apple/compare_icon_battery__d32jskk45sk2_large.png);
+  width: 48px;
+  height: 44px;
+}
+
+.camera-img{
+  background: url(../img/apple/compare_icon_camera__bt6xt5ej5yly_large.png);
+  width: 48px;
+  height: 44px;
+}
+
+.Touch-bar-img{
+  background: url(../img/apple/compare_icon_touch_id_touch_bar__es4l9y6jl0qe_large.png);
+  width: 48px;
+  height: 44px;
+}
+
+.TouchID-img{
+  background: url(../img/apple/compare_icon_touchid__b765mn70rh36_large.png);
+  width: 48px;
+  height: 44px;
+}
+
+h4{
+  font-size: 21px;
+}
