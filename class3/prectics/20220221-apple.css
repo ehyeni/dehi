@@ -2,7 +2,7 @@
   --new-color:#c9672c;
   --background-gray:#f9f9fa;
   --text-color: #1d1d1f;
-  --apple-blue: #0071E3;
+  --apple-blue: #0066cc;
 }
 
 header{
@@ -145,6 +145,7 @@ header{
   margin-top: 12px;
   text-decoration: none;
 }
+
 .nav2-a-pro13{
   width: 90.14px;
   height: 89px;
@@ -207,7 +208,7 @@ header{
 .mainbanner{
   height: 757px;
   padding-top: 66px;
-  padding-bottom: 122px;
+  padding-bottom: 80px;
 }
 
 h1{
@@ -274,13 +275,11 @@ h1{
   color: white;
   width: 86px;
   height: 36px;
-  display: inline-block;
-  padding-top: 11px;
-  box-sizing: border-box;
   border-radius: 30px;
   text-decoration: none;
   font-size: 15px;
-  margin-right: 12px;
+  text-align: center;
+  line-height: 36px;
 }
 
 .buymore>a:last-child{
@@ -291,11 +290,10 @@ h1{
   margin-left: 12px;
 }
 
-/* 그리드 영역 */
+/* 섹션 - 맥 선택 */
 
 .choice-Mac{
   width: 100%;
-  height: 1715px;
   background-color: var(--background-gray);
   padding: 110px 0;
   display: flex;
@@ -309,10 +307,12 @@ h1{
   font-weight: bold;
 }
 
+/* 그리드 영역 */
 /* 그리드 이름 지정 13*/
 
 .choice-13-img{
   grid-area: choice-13-img;
+  margin-top: 22px;
 }
 
 .choice-13-buybotton{
@@ -358,6 +358,7 @@ h1{
 /* 그리드 이름 지정 14*/
 .choice-14-img{
   grid-area: choice-14-img;
+  margin-top: 16px;
 }
 
 .choice-14-buybotton{
@@ -449,36 +450,6 @@ h1{
   grid-area: choice-16-TouchID;
 }
 
-
-.how-to-choose{
-  width: 940px;
-  margin-top: 88px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(11, auto);
-  grid-row-gap: 39px;
-  grid-column-gap: 34px;
-  grid-template-areas:
-    "choice-13-img choice-14-img choice-16-img"
-    "choice-13-buybotton choice-14-buybotton choice-16-buybotton"
-    "choice-13-chip choice-14-chip choice-16-chip"
-    "choice-13-cpu choice-14-cpu choice-16-cpu"
-    "choice-13-gpu choice-14-gpu choice-16-gpu"
-    "choice-13-memory choice-14-memory choice-16-memory"
-    "choice-13-TB choice-14-TB choice-16-TB"
-    "choice-13-display choice-14-display choice-16-display"
-    "choice-13-camera choice-14-camera choice-16-camera"
-    "choice-13-weight choice-14-weight choice-16-weight"
-    "choice-13-Touch-bar choice-14-TouchID choice-16-TouchID";
-}
-
-.how-to-choose>div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
 /* 그리드 안에 이미지 삽입 */
 
 .mac13-img{
@@ -547,6 +518,154 @@ h1{
   height: 44px;
 }
 
+/* 그리드 설정 및 스타일 지정 */
+
+.how-to-choose{
+  width: 940px;
+  margin-top: 88px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(11, auto);
+  grid-row-gap: 39px;
+  grid-column-gap: 34px;
+  grid-template-areas:
+    "choice-13-img choice-14-img choice-16-img"
+    "choice-13-buybotton choice-14-buybotton choice-16-buybotton"
+    "choice-13-chip choice-14-chip choice-16-chip"
+    "choice-13-cpu choice-14-cpu choice-16-cpu"
+    "choice-13-gpu choice-14-gpu choice-16-gpu"
+    "choice-13-memory choice-14-memory choice-16-memory"
+    "choice-13-TB choice-14-TB choice-16-TB"
+    "choice-13-display choice-14-display choice-16-display"
+    "choice-13-battery choice-14-battery choice-16-battery"
+    "choice-13-camera choice-14-camera choice-16-camera"
+    "choice-13-weight choice-14-weight choice-16-weight"
+    "choice-13-Touch-bar choice-14-TouchID choice-16-TouchID";
+}
+
+.how-to-choose>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
 h4{
   font-size: 21px;
+  font-weight: bold;
 }
+
+.how-to-choose>div p{
+  font-size: 14px;
+  text-align: center;
+  margin: 12px;
+  color: var(--text-color);
+}
+
+.square{
+  display: inline-block;
+  vertical-align:super;
+  font-size: 9px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.color-img{
+  margin-top: 24px
+}
+
+.how-to-choose>div .choice-new{
+  color: var(--new-color);
+  font-size: 12px;
+}
+
+.how-to-choose>div>h3{
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.choice-13-buybotton, .choice-14-buybotton, .choice-16-buybotton{
+  margin-top: -24px;
+  padding-bottom: 32px;
+  border-bottom: solid 1px lightgray;
+}
+.choice-13-buybotton>a:first-child, .choice-14-buybotton>a:first-child, .choice-16-buybotton>a:first-child{
+    background-color: var(--apple-blue);
+    color: white;
+    width: 60px;
+    height: 24px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 11px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.choice-13-buybotton>a:last-child, .choice-14-buybotton>a:last-child, .choice-16-buybotton>a:last-child{
+  text-decoration: none;
+  color: var(--apple-blue);
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.choice-13-Touch-bar, .choice-14-TouchID, .choice-16-TouchID{
+  padding-bottom: 43px;
+  border-bottom: 1px solid lightgray;
+}
+
+.choice-more{
+  padding-top: 43px;
+}
+
+.choice-more>a{
+  font-size: 16px;
+  color: var(--apple-blue);
+  text-decoration: none;
+}
+
+.choice-more>a:first-child{
+  margin-right: 32px;
+}
+
+/* 서포트 섹션 */
+
+/* .sport-section{
+  display: flex;
+  justify-content: center;
+  padding: 26px 0;
+}
+
+.sport{
+  width: 1146px;
+  display: flex;
+}
+
+.sport-acc, .sport-trade{
+  width: 675px;
+  height: 750px;
+  background-color: var(--background-gray);
+}
+
+.sport-acc{
+  margin-right: 16px;
+}
+
+.sport-trade{
+  margin-left: 16px;
+}
+
+.sport-work, .sport-edu{
+  width: 675px;
+  height: 600px;
+}
+
+.sport-work{
+  background-image: url(../img/apple/business__ww84q61opmqy_large.jpg)
+  margin-right: 16px;
+}
+
+.sport-edu{
+  background-image: url(../img/apple/education__d82em19gb3ue_large.jpg);
+  margin-left: 16px;
+} */
