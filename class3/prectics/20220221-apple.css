@@ -223,19 +223,18 @@ h1{
   font-weight: bold;
 }
 
-.mainbanner-bottom{
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-  text-align: center;
+.modle13{
+  margin-right: 64px;
+
 }
 
 .banner-13{
   background: url(../img/apple/hero_13__d1tfa5zby7e6_large.jpg);
-  width: 374px;
+  width: 398.59px;
   height: 218px;
   background-repeat: no-repeat;
-  margin: 40px 64px 80px 0;
+  background-position: center;
+  margin: 40px 0 80px 0;
 }
 
 .banner-1416{
@@ -251,6 +250,13 @@ h1{
   line-height: 18px;
   color: var(--new-color);
   font-weight: bold;
+}
+
+.mainbanner-bottom{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  text-align: center;
 }
 
 .mainbanner h2{
@@ -289,6 +295,11 @@ h1{
   line-height: 36px;
 }
 
+.more:hover{
+  text-decoration: underline;
+}
+
+
 .buymore>a:last-child{
   color: var(--apple-blue);
   text-decoration: none;
@@ -296,6 +307,8 @@ h1{
   font-weight: bold;
   margin-left: 12px;
 }
+
+
 
 /* 섹션 - 맥 선택 */
 
@@ -637,42 +650,222 @@ h4{
 
 /* 서포트 섹션 */
 
-/* .sport-section{
-  display: flex;
-  justify-content: center;
-  padding: 26px 0;
+.sport-section{
+  padding: 32px;
 }
 
-.sport{
-  width: 1146px;
+.sport-top{
+  margin-bottom: 32px;
+}
+
+.sport-top, .sport-bottom{
   display: flex;
+  justify-content: center;
 }
 
 .sport-acc, .sport-trade{
-  width: 675px;
+  width: 50%;
+  max-width: 675px;
   height: 750px;
-  background-color: var(--background-gray);
+  padding-top: 64px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .sport-acc{
   margin-right: 16px;
+  background: url(../img/apple/accessories__geg8014ci2mq_large.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 260px;
+  background-color: #f2f2f2;
 }
 
 .sport-trade{
-  margin-left: 16px;
+  margin-left: 16px; 
+  background: url(../img/apple//trade_in__bfsmrecu4uhe_large.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #f2f2f2;
 }
 
 .sport-work, .sport-edu{
-  width: 675px;
+  width: 50%;
   height: 600px;
+  max-width: 675px;
+  text-align: center;
+  color: white;
+  position: relative;
 }
 
 .sport-work{
-  background-image: url(../img/apple/business__ww84q61opmqy_large.jpg)
+  background-image: url(../img/apple/business__ww84q61opmqy_large.jpg);
   margin-right: 16px;
+  background-repeat: no-repeat;
 }
 
 .sport-edu{
   background-image: url(../img/apple/education__d82em19gb3ue_large.jpg);
   margin-left: 16px;
-} */
+  background-repeat: no-repeat;
+}
+
+.sport-section h2{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.sport-section h3{
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 56px;
+}
+
+.sport-top h3{
+  margin: 0 90px;
+  margin-bottom: 16px;
+}
+
+.sport-section a{
+  text-decoration: none;
+}
+
+.sport-section p{
+  font-size: 15px;
+}
+
+.sport-top p{
+  margin: 0 130px;
+}
+
+
+.sport-acc>a{
+  background-color: var(--apple-blue);
+  text-decoration: none;
+  color: white;
+  width: 85px;
+  height: 36px;
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  display: inline-block;
+}
+
+.sport-trade>p{
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.sport-trade>a{
+  color: var(--apple-blue);
+}
+
+.sport-bottom-text{
+  width: 365px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sport-bottom-text>p{
+  font-size: 15px;
+  margin: 24px 0;
+  font-weight: bold;
+}
+
+.sport-bottom-text>a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.sport-work>.sport-bottom-text>a:last-child{
+  margin-top: 16px;
+}
+
+/* 서비스 섹션 */
+
+.service{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.delivery, .finance{
+  width: 382px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service figure{
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service h2{
+  margin: 24px 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.service p{
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.finance>a, .delivery>a{
+  color: var(--apple-blue);
+  text-decoration: none;
+  margin-top: 24px;
+}
+
+.delivery-icon{
+  background: url(../img/apple/icon_free_delivery__gko0equ2lxim_large.png);
+  width: 40px;
+  height: 44px;
+}
+
+.finance-icon{
+  background: url(../img/apple/icon-finance__bz6oi5bk7f2a_large.svg);
+  width: 40px;
+  height: 44px;
+}
+
+/* fotter */
+
+footer{
+  width: 100%;
+  height: 850px;
+  background-color: var(--background-gray);
+}
+
+
+.infotext{
+  width: 100%;
+  max-width: 980px;
+  padding: 16px 32px;
+  margin: 0 auto;
+  font-size: 11px;
+  line-height: 16px;
+  color: #6E6E74;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.infotext ol{
+  list-style: decimal;
+  padding-left: 12px;
+}
+
+.infotext li{
+  margin: 12px 0;
+}
