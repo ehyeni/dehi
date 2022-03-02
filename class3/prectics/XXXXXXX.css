@@ -337,152 +337,144 @@ h1{
 /* 그리드 영역 */
 /* 그리드 이름 지정 13*/
 
-.mac13.device{
-  grid-area: mac13-device;
+.choice-13-img{
+  grid-area: choice-13-img;
   justify-content: flex-end;
 }
 
-.mac13.buy{
-  grid-area: mac13-buy;
+.choice-13-buybotton{
+  grid-area: choice-13-buybotton;
 }
 
-.mac13.chip{
-  grid-area: mac13-chip;
+.choice-13-chip{
+  grid-area: choice-13-chip;
 }
 
-.mac13.cpu{
-  grid-area: mac13-cpu;
+.choice-13-cpu{
+  grid-area: choice-13-cpu;
 }
 
-.mac13.gpu{
-  grid-area: mac13-gpu;
+.choice-13-gpu{
+  grid-area: choice-13-gpu;
 }
 
-.mac13.memory{
-  grid-area: mac13-memory;
+.choice-13-memory{
+  grid-area: choice-13-memory;
 }
 
-.mac13.TB{
-  grid-area: mac13-TB;
+.choice-13-TB{
+  grid-area: choice-13-TB;
 }
 
-.mac13.display{
-  grid-area: mac13-display;
+.choice-13-display{
+  grid-area: choice-13-display;
 }
 
-.mac13.battery{
-  grid-area: mac13-battery;
+.choice-13-camera{
+  grid-area: choice-13-camera;
 }
 
-.mac13.camera{
-  grid-area: mac13-camera;
+.choice-13-weight{
+  grid-area: choice-13-weight;
 }
 
-.mac13.weight{
-  grid-area: mac13-weight;
-}
-
-.mac13.touch-bar{
-  grid-area: mac13-touch-bar;
+.choice-13-Touch-bar{
+  grid-area: choice-13-Touch-bar;
 }
 
 /* 그리드 이름 지정 14*/
-.mac14.device{
-  grid-area: mac14-device;
+.choice-14-img{
+  grid-area: choice-14-img;
   justify-content: flex-end;
 }
 
-.mac14.buy{
-  grid-area: mac14-buy;
+.choice-14-buybotton{
+  grid-area: choice-14-buybotton;
 }
 
-.mac14.chip{
-  grid-area: mac14-chip;
+.choice-14-chip{
+  grid-area: choice-14-chip;
 }
 
-.mac14.cpu{
-  grid-area: mac14-cpu;
+.choice-14-cpu{
+  grid-area: choice-14-cpu;
 }
 
-.mac14.gpu{
-  grid-area: mac14-gpu;
+.choice-14-gpu{
+  grid-area: choice-14-gpu;
 }
 
-.mac14.memory{
-  grid-area: mac14- memory;
+.choice-14-memory{
+  grid-area: choice-14-memory;
 }
 
-.mac14.TB{
-  grid-area: mac14-TB;
+.choice-14-TB{
+  grid-area: choice-14-TB;
 }
 
-.mac14.display{
-  grid-area: mac14-display;
-}
-
-.mac14.battery{
-  grid-area: mac14-battery;
+.choice-14-display{
+  grid-area: choice-14-display;
 }
 
 .choice-14-camera{
-  grid-area: mac14-camera;
+  grid-area: choice-14-camera;
 }
 
-.mac14.weight{
-  grid-area: mac14-weight;
+.choice-14-weight{
+  grid-area: choice-14-weight;
 }
 
-.mac14.touch-bar{
-  grid-area: mac14-touch-bar;
+.choice-14-TouchID{
+  grid-area: choice-14-TouchID;
 }
 
 /* 그리드 이름 지정 16*/
-.mac16.device{
-  grid-area: mac16-device;
+.choice-16-img{
+  grid-area: choice-16-img;
 }
 
-.mac16.buy{
-  grid-area: mac16-buy;
+.choice-16-img{
+  grid-area: choice-16-img;
 }
 
-.mac16.chip{
-  grid-area: mac16-chip;
+.choice-16-buybotton{
+  grid-area: choice-16-buybotton;
 }
 
-.mac16.cpu{
-  grid-area: mac16-cpu;
+.choice-16-chip{
+  grid-area: choice-16-chip;
 }
 
-.mac16.gpu{
-  grid-area: mac16-gpu;
+.choice-16-cpu{
+  grid-area: choice-16-cpu;
 }
 
-.mac16.memory{
-  grid-area: mac16-memory;
+.choice-16-gpu{
+  grid-area: choice-16-gpu;
 }
 
-.mac16.TB{
-  grid-area: mac16-TB;
+.choice-16-memory{
+  grid-area: choice-16-memory;
 }
 
-.mac16.display{
-  grid-area: mac16-display;
+.choice-16-TB{
+  grid-area: choice-16-TB;
 }
 
-.mac16.battery{
-  grid-area: mac16- battery;
+.choice-16-display{
+  grid-area: choice-16-display;
 }
 
-.mac16.camera{
-  grid-area: mac16-camera;
+.choice-16-camera{
+  grid-area: choice-16-camera;
 }
 
-.mac16.weight{
-  grid-area: mac16-weight;
+.choice-16-weight{
+  grid-area: choice-16-weight;
 }
 
-.mac16.touch-bar{
-  grid-area: mac16-touch-bar;
+.choice-16-TouchID{
+  grid-area: choice-16-TouchID;
 }
 
 /* 그리드 안에 이미지 삽입 */
@@ -564,18 +556,18 @@ h1{
   grid-row-gap: 39px;
   grid-column-gap: 34px;
   grid-template-areas:
-    "mac13-device mac14-device mac16-device"
-    "mac13-buy mac14-buy mac16-buy"
-    "mac13-chip mac14-chip mac16-chip"
-    "mac13-cpu mac14-cpu mac16-cpu"
-    "mac13-gpu mac14-gpu mac16-gpu"
-    "mac13-memory mac14-memory mac16-memory"
-    "mac13-TB mac14-TB mac16-TB"
-    "mac13-display mac14-display mac16-display"
-    "mac13-battery mac14-battery mac16-battery"
-    "mac13-camera mac14-camera mac16-camera"
-    "mac13-weight mac14-weight mac16-weight"
-    "mac13-touch-bar mac14-touch-bar mac16-touch-bar";
+    "choice-13-img choice-14-img choice-16-img"
+    "choice-13-buybotton choice-14-buybotton choice-16-buybotton"
+    "choice-13-chip choice-14-chip choice-16-chip"
+    "choice-13-cpu choice-14-cpu choice-16-cpu"
+    "choice-13-gpu choice-14-gpu choice-16-gpu"
+    "choice-13-memory choice-14-memory choice-16-memory"
+    "choice-13-TB choice-14-TB choice-16-TB"
+    "choice-13-display choice-14-display choice-16-display"
+    "choice-13-battery choice-14-battery choice-16-battery"
+    "choice-13-camera choice-14-camera choice-16-camera"
+    "choice-13-weight choice-14-weight choice-16-weight"
+    "choice-13-Touch-bar choice-14-TouchID choice-16-TouchID";
 }
 
 .how-to-choose>div{
@@ -619,12 +611,12 @@ h4{
   font-weight: bold;
 }
 
-.mac13.buy, .mac14.buy, .mac16.buy{
+.choice-13-buybotton, .choice-14-buybotton, .choice-16-buybotton{
   margin-top: -24px;
   padding-bottom: 32px;
   border-bottom: solid 1px lightgray;
 }
-.mac13.buy>a:first-child, .mac14.buy>a:first-child, .mac16.buy>a:first-child{
+.choice-13-buybotton>a:first-child, .choice-14-buybotton>a:first-child, .choice-16-buybotton>a:first-child{
     background-color: var(--apple-blue);
     color: white;
     width: 60px;
@@ -637,19 +629,15 @@ h4{
     line-height: 24px;
 }
 
-.mac13.buy>a:first-child:hover, .mac14.buy>a:first-child:hover, .mac16.buy>a:first-child:hover{
-  background-color: var(--apple-blue-hover);
-}
 
-
-.mac13.buy>a:last-child, .mac14.buy>a:last-child, .mac16.buy>a:last-child{
+.choice-13-buybotton>a:last-child, .choice-14-buybotton>a:last-child, .choice-16-buybotton>a:last-child{
   text-decoration: none;
   color: var(--apple-blue);
   margin-top: 12px;
   font-size: 12px;
 }
 
-.mac13.touch-bar, .mac14.touch-bar, .mac16.touch-bar{
+.choice-13-Touch-bar, .choice-14-TouchID, .choice-16-TouchID{
   padding-bottom: 43px;
   border-bottom: 1px solid lightgray;
 }
@@ -880,13 +868,9 @@ footer{
 
 .footer-container{
   width: 100%;
-  max-width: 1044px;
+  max-width: 980px;
   margin: 0 auto;
-}
 
-.infotext, .chapter, .footer-menu, .end{
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
 
@@ -901,7 +885,7 @@ footer{
 
 .infotext ol{
   list-style: decimal;
-  padding: 12px;
+  padding-left: 12px;
 }
 
 .infotext li{
@@ -914,18 +898,15 @@ footer{
   line-height: 24px;
   margin-top: 12px;
   color: #424245;
-  align-items: center;
 }
 
 .chapter>a{
   text-decoration: none;
   color: #424245;
   margin-right: 4px;
-  width: 24px;
 }
 
 .next{
-  width: 24px;
   font-size: 24px;
   color: var(--footer-border);
   margin-right: 4px;
@@ -935,6 +916,7 @@ footer{
 	background: url(../img/apple/icon_large.svg) no-repeat -1px -1px;
 	width: 12px;
 	height: 16px;
+  margin-top: 4.5px;
 }
 
 .footer-menu{
