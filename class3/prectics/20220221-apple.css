@@ -227,7 +227,10 @@ h1{
 }
 
 .modle13{
-  margin-right: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 
 }
 
@@ -237,7 +240,7 @@ h1{
   height: 218px;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 40px 0 80px 0;
+  margin-bottom: 80px;
 }
 
 .banner-1416{
@@ -260,6 +263,7 @@ h1{
   justify-content: center;
   margin-top: 80px;
   text-align: center;
+  gap: 40px;
 }
 
 .mainbanner h2{
@@ -276,7 +280,7 @@ h1{
 
 .mainbanner-cost{
   font-size: 24px;
-
+  font-weight: bold;
 }
 
 .buymore{
@@ -591,7 +595,7 @@ h4{
 }
 
 .how-to-choose>div p{
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   margin: 12px;
   color: var(--text-color);
@@ -647,6 +651,16 @@ h4{
   color: var(--apple-blue);
   margin-top: 12px;
   font-size: 12px;
+}
+
+.chip-p-2{
+  display: none;
+}
+
+.p-caption{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mac13.touch-bar, .mac14.touch-bar, .mac16.touch-bar{
@@ -1007,8 +1021,63 @@ footer{
   margin: 0;
 }
 
-@media screen and (min-width:1070px){
+@media screen and (max-width:1070px){
 
+  .mainbanner{
+    height: 583px;
+  }
+
+  h1{
+    font-size: 64px;
+  }
+
+  .mainbanner-bottom{
+    gap: 21px;
+  }
+
+  .banner-13{
+    background: url(../img/apple/hero_13__d1tfa5zby7e6_medium.jpg);
+    width: 264px;
+    height: 156px;
+    margin-bottom: 21px;
+  }
+  .banner-1416{
+    background: url(../img/apple/hero_14_16__bux8byft94oi_medium.jpg);
+    width: 408px;
+    height: 182px;
+    margin-bottom: 21px;
+  }
+
+  .mainbanner-new{
+    font-size: 11px;
+  }
   
+  .mainbanner h3{
+    font-size: 28px;
+    margin: 12px 0;
+  }
+
+  .mainbanner-cost{
+    font-size: 21px;
+  }
+
+  .buymore{
+    margin-top: 24px;
+  }
+
+  .how-to-choose{
+    width: 722px;
+    grid-column-gap: 12px;
+  }
+
+
+  .chip-p-1{
+    display: none;
+  }
+
+  .chip-p-2{
+    display: block;
+  }
+
 
 }
