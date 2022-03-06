@@ -1,5 +1,6 @@
 :root{
-  --font-color-blue: #5865f2
+  --font-color-blue: #5865f2;
+  --font-color-gray: #4f545c;
 }
 
 header{
@@ -117,3 +118,32 @@ h1>span{
   margin-right: 8px;
 }
 
+.sport-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 96px 0;
+}
+
+.sport-container>p{
+  text-align: center;
+  color: var(--font-color-gray);
+}
+
+.sport-container>p:first-child{
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.sport-container>p:nth-child(2){
+  line-height: 21px;
+}
+
+.guide{
+  text-decoration: none;
+  color: var(--font-color-blue);
+}
+
+.guide:hover{
+  text-decoration: underline;
+}
