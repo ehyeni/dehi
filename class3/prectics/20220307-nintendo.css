@@ -10,9 +10,10 @@
   color: var(--text-gray);
 }
 
-.header{
+header{
   width: 100%;
   height: 124px;
+  border-bottom: 4px solid var(--red);
 }
 
 .nintendo-logo{
@@ -29,13 +30,17 @@
 }
 
 .nav-section{
-  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container{
+  width: 90%;
+  max-width: 1000px;
   height: 78px;
-  border-bottom: 4px solid var(--red);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 48px;
   box-sizing: border-box;
 }
 
@@ -60,7 +65,12 @@ nav>ul{
   display: flex;
 }
 
-nav>ul>li{
+ul>a{
+  text-decoration: none;
+  color: var(--text-gray);
+}
+
+ul>a>li{
   height: 14px;
   font-size: 14px;
   font-weight: bold;
@@ -71,7 +81,7 @@ nav>ul>li{
   cursor: pointer;
 }
 
-.qna{
+.nav-qna{
   margin-right: 0;
 }
 
@@ -79,7 +89,7 @@ nav>ul>li{
   color: var(--red);
 }
 
-ul>li::after{
+ul>a>li::after{
   overflow: visible;
   margin-top: 7px;
   font-size: 13px;
@@ -106,4 +116,180 @@ ul>li::after{
 .nav-qna:hover{
  color: #f6b522;
 }
+
+.about-amiibo{
+  width: 100%;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid var(--line--gray);
+}
+
+.about-amiibo-box{
+  width: 90%;
+  max-width: 1000px;
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-amiibo-box>h2{
+  font-size: 28px;
+  color: var(--red);
+  font-weight: bold;
+}
+
+.about-amiibo-box>span{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.chapter{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--line--gray);
+}
+
+.chapter-box{
+  width: 90%;
+  max-width: 1000px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.chapter-box>{
+  width: 18px;
+  height: 14px;
+}
+
+.chapter-box>span{
+  font-size: 12px;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+.chapter-amiibo{
+  color: #999999;
+}
+
+.chapter-box>.chapter-about{
+  color: var(--red);
+}
+
+.top-banner{
+  width: 100%;
+  height: 780px;
+  background: url(../img/nintendo/contents_01_bg.jpg);
+  display: flex;
+  justify-content: center;
+}
+
+.top-banner-container{
+  width: 90%;
+  max-width: 1000px;
+  height: 780px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-banner-container>figure{
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.top-banner-container>p:nth-child(2){
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--red);
+  margin: 24px 0;
+}
+
+.top-banner-container>p:nth-child(3){
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 88px;
+}
+
+.info-news{
+  background-color: #f9f9f9;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.info-news-container{
+  max-width: 1000px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.news{
+  display: flex;
+  margin-bottom: 80px;
+  gap: 32px;
+}
+
+.news-img{
+  width: 420px;
+  height: 236px;
+  position: relative;
+}
+
+.news-img>figure:last-child{
+  position: absolute;
+  bottom: -50px;
+}
+
+.img-front-1{
+  right: -67px;
+}
+
+.img-front-2{
+  right: -40px;
+}
+
+.news-text{
+  font-weight: bold;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.news-text>h3{
+  font-size: 34px;
+  margin-bottom: 32px;
+}
+
+.splatoon-info>span, .super-info>span{
+  font-size: 24px;
+}
+
+.splatoon-info, .super-info{
+  margin-bottom: 24px;
+  line-height: 28px;
+}
+
+.splatoon-h3, .splatoon-info>span{
+  color: var(--red);
+}
+
+.super-h3, .super-info>span{
+  color: var(--blue);
+}
+
+.news-text>:last-child{
+  color: #666666;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+
+
 

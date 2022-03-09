@@ -19,22 +19,24 @@
       </a>
     </div>
     <div class="nav-section">
-      <h1>
-        <span>amiibo</span>
-        <figure><img src="../img/nintendo/amiibo-logo.png" alt=""></figure>
-      </h1>
-      <nav>
-        <ul>
-          <li class="nav-top">TOP</li>
-          <li class="nav-about">amiibo란?</li>
-          <li class="nav-line-up">라인업</li>
-          <li class="nav-software">대응 소프트웨어</li>
-          <li class="nav-qna">Q&A</li>
-        </ul>
-      </nav>
+      <div class="nav-container">
+        <h1>
+          <span>amiibo</span>
+          <figure><img src="../img/nintendo/amiibo-logo.png" alt=""></figure>
+        </h1>
+        <nav>
+          <ul>
+            <!-- a태그 넣기-->
+            <a href="#"><li class="nav-top">TOP</li></a>
+            <a href="#"><li class="nav-about">amiibo란?</li></a>
+            <a href="#"><li class="nav-line-up">라인업</li></a>
+            <a href="#"><li class="nav-software">대응 소프트웨어</li></a>
+            <a href="#"><li class="nav-qna">Q&A</li></a>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
-  <!-- 이 영역이 원래 페이지에는 아티클인데 아티클로 작성하는게 맞는지 궁금합니다.. 여기부터-->
   <div class="about-amiibo">
     <div class="about-amiibo-box">
       <h2>amiibo란?</h2>
@@ -49,60 +51,61 @@
       <span>&gt;</span>
       <span class="chapter-amiibo">amiibo</span>
       <span>&gt;</span>
+      <span class="chapter-about">amiibo란?</span>
     </div>
-    <span class="chapter-about">amiibo란?</span>
   </div>
-  <!-- 이 영역이 원래 페이지에는 아티클인데 아티클로 작성하는게 맞는지 궁금합니다.. 여기까지-->
   <section class="top-banner">
-    <figure>
-      <img src="../img/nintendo/mii-btn.png" alt="">
-    </figure>
-    <p>다양한 게임과 이어진다</p>
-    <p>amiibo에 대응하는 소프트웨어에서 플레이어로 등장하기도 하고, 특별한 아이템을 주는 등<br>하나의 amiibo가 열 게임 속에서 다양한 체험, 다양한 즐거움으로 이어집니다.</p>
-    <figure><img src="../img/nintendo/connect-img.png" alt=""></figure>
-  </section>
-  <section class="info-news">
-    <article>
-      <div class="news-img">
-        <figure>
-          <img src="../img/nintendo/in-game-img.jpg" alt="">
-        </figure>
-        <figure class="img-front">
-        <img src="../img/nintendo/in-game-aeak.png" alt="">
-        </figure>
-      </div>
-      <div class="news-text">
-        <h3>게임에 등장</h3>
-        <strong>예를 들면 「Splatoon 2」에서는</strong>
-        <b>당신을 도와주는 역할로 게임에 등장</b>
-        <p>amiibo를 아래 화면에 터치하면, 해당 캐릭터가 게임에 등장.<br>
-          선호하는 특정 장비 및 무기의 조합을 기록할 수 있습니다.<br>
-          함께 사진을 찍을 수 있어, 촬영한 사진은 SNS에 업로드할 수 있습니다.<br>
-          특정한 장비를 선물로 받을 수 있습니다.</p>
-        <div class="line"></div>
-      </div>
-    </article>
-    <article>
-      <div class="news-img">
+    <div class="top-banner-container">
       <figure>
-        <img src="../img/nintendo/in-game-img.jpg" alt="">
+        <img src="../img/nintendo/mii-btn.png" alt="">
       </figure>
-      <figure class="img-front">
-      <img src="../img/nintendo/in-game-aeak.png" alt="">
-      </figure>
-      </div>
-      <div class="news-text">
-        <h3>amiibo가 성장</h3>
-        <strong>예를 들면「슈퍼 스매시브라더스 얼티밋」에서는</strong>
-        <b>더 강하게 육성하여 나만의 캐릭터로</b>
-        <p>게임에 등장하는 FP(피규어 파이터)는 스스로 생각해서 배틀한다!<br>
-          배틀 중에 성능이나 성격도 성장!<br>
-          육성한 캐릭터 정보를 amiibo를 다시 터치하여 기록하면,<br>
-          세상에 단 하나뿐인 나만의 amiibo가 됩니다.</p>
-          <div class="line"></div>
-      </div>
-    </article>
+      <p>다양한 게임과 이어진다</p>
+      <p>amiibo에 대응하는 소프트웨어에서 플레이어로 등장하기도 하고, 특별한 아이템을 주는 등<br>하나의 amiibo가 열 게임 속에서 다양한 체험, 다양한 즐거움으로 이어집니다.</p>
+      <figure><img src="../img/nintendo/connect-img.png" alt=""></figure>
+    </div>
   </section>
+
+  <section class="info-news">
+    <div class="info-news-container">
+      <article class="news"> 
+        <div class="news-img">
+          <figure>
+            <img src="../img/nintendo/in-game-img.jpg" alt="">
+          </figure>
+          <figure class="img-front-1">
+          <img src="../img/nintendo/in-game-aeak.png" alt="">
+          </figure>
+        </div>
+        <div class="news-text">
+          <h3 class="splatoon-h3">게임에 등장</h3>
+          <p class="splatoon-info">예를 들면 「Splatoon 2」에서는<br><span>당신을 도와주는 역할로 게임에 등장</span></p>
+          <p>amiibo를 아래 화면에 터치하면, 해당 캐릭터가 게임에 등장.<br>
+            선호하는 특정 장비 및 무기의 조합을 기록할 수 있습니다.<br>
+            함께 사진을 찍을 수 있어, 촬영한 사진은 SNS에 업로드할 수 있습니다.<br>
+            특정한 장비를 선물로 받을 수 있습니다.</p>
+        </div>
+      </article>
+      <article class="news">
+        <div class="news-img">
+        <figure>
+          <img src="../img/nintendo/amiibo-yoshi.png" alt="">
+        </figure>
+        <figure class="img-front-2">
+        <img src="../img/nintendo/screenshot-img.png" alt="">
+        </figure>
+        </div>
+        <div class="news-text">
+          <h3 class="super-h3">amiibo가 성장</h3>
+          <p class="super-info">예를 들면「슈퍼 스매시브라더스 얼티밋」에서는<br><span>더 강하게 육성하여 나만의 캐릭터로</span></p>
+          <p>게임에 등장하는 FP(피규어 파이터)는 스스로 생각해서 배틀한다!<br>
+            배틀 중에 성능이나 성격도 성장!<br>
+            육성한 캐릭터 정보를 amiibo를 다시 터치하여 기록하면,<br>
+            세상에 단 하나뿐인 나만의 amiibo가 됩니다.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <section class="contect-amiibo">
     <h3>게임 세계와 이어진다.</h3>
     <p>Nintendo switch Joy-Con에 amiibo를 터치하기만 해도<br>
@@ -127,7 +130,7 @@
       </div>
       <div class="3DS">
         <figure>
-          <img src="../img/nintendo/amiibo-modallinks-img01.jpg" alt="">
+          <img src="../img/nintendo/amiibo-modallinks-img02.jpg" alt="">
         </figure>
         <div class="device-title">
           <div><p>&gt;</p></div>
