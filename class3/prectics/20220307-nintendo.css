@@ -1,0 +1,109 @@
+:root{
+  --red:#e5001c;
+  --green:#019682;
+  --blue:#009beb;
+  --text-gray:#222222;
+  --line--gray: #eeeeee;
+}
+
+.body{
+  color: var(--text-gray);
+}
+
+.header{
+  width: 100%;
+  height: 124px;
+}
+
+.nintendo-logo{
+  width: 100%;
+  height: 46px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.nintendo-logo figure{
+  width: 80px;
+  height: 20px;
+  margin: 0 auto;
+  padding-top: 13px;
+}
+
+.nav-section{
+  width: 100%;
+  height: 78px;
+  border-bottom: 4px solid var(--red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 48px;
+  box-sizing: border-box;
+}
+
+h1{
+  position: relative;
+}
+
+h1>span{
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  position: absolute;
+}
+
+h1>figure>img{
+  width: 151px;
+  height: 34.78;
+}
+
+nav>ul{
+  display: flex;
+}
+
+nav>ul>li{
+  height: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.qna{
+  margin-right: 0;
+}
+
+.nav-about{
+  color: var(--red);
+}
+
+ul>li::after{
+  overflow: visible;
+  margin-top: 7px;
+  font-size: 13px;
+  content: "▲";
+
+}
+
+.nav-top::after,.nav-line-up::after,.nav-software::after,.nav-qna::after{
+  opacity: 0;
+}
+
+.nav-top:hover:after,.nav-line-up:hover::after,.nav-software:hover::after,.nav-qna:hover::after{
+  opacity: 100%;
+}
+
+.nav-line-up:hover{
+  color: #b1cf2f;
+}
+
+.nav-software:hover{
+  color: #009ced;
+}
+
+.nav-qna:hover{
+ color: #f6b522;
+}
+
