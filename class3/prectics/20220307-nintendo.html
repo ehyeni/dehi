@@ -20,6 +20,25 @@
     </div>
     <div class="nav-section">
       <div class="nav-container">
+
+        <div class="hamburger-menu">
+          <input type="checkbox" name="ham-check" id="ham-check">
+          <label for="ham-check">
+            <span class="hamburger"><span></span></span>
+          </label>
+          <div class="hidden">
+            <div class="hidden-menu">
+              <ul class="hideen-ul">
+                <a href="#"><li class="nav-top-hidden">TOP</li></a>
+                <a href="#"><li class="nav-about-hidden">amiibo란?</li></a>
+                <a href="#"><li class="nav-line-up-hidden">라인업</li></a>
+                <a href="#"><li class="nav-software-hidden">대응 소프트웨어</li></a>
+                <a href="#"><li class="nav-qna-hidden">Q&A</li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <h1>
           <span>amiibo</span>
           <figure><img src="../img/nintendo/amiibo-logo.png" alt=""></figure>
@@ -27,11 +46,11 @@
         <nav>
           <ul>
             <!-- a태그 넣기-->
-            <a href="#"><li class="nav-top">TOP</li></a>
-            <a href="#"><li class="nav-about">amiibo란?</li></a>
-            <a href="#"><li class="nav-line-up">라인업</li></a>
-            <a href="#"><li class="nav-software">대응 소프트웨어</li></a>
-            <a href="#"><li class="nav-qna">Q&A</li></a>
+            <a href="#" class="top-a"><li class="nav-top">TOP</li></a>
+            <a href="#" class="top-a"><li class="nav-about">amiibo란?</li></a>
+            <a href="#" class="top-a"><li class="nav-line-up">라인업</li></a>
+            <a href="#" class="top-a"><li class="nav-software">대응 소프트웨어</li></a>
+            <a href="#" class="top-a"><li class="nav-qna">Q&A</li></a>
           </ul>
         </nav>
       </div>
@@ -56,12 +75,12 @@
   </div>
   <section class="top-banner">
     <div class="top-banner-container">
-      <figure>
+      <figure class="mii">
         <img src="../img/nintendo/mii-btn.png" alt="">
       </figure>
-      <p>다양한 게임과 이어진다</p>
-      <p>amiibo에 대응하는 소프트웨어에서 플레이어로 등장하기도 하고, 특별한 아이템을 주는 등<br>하나의 amiibo가 열 게임 속에서 다양한 체험, 다양한 즐거움으로 이어집니다.</p>
-      <figure><img src="../img/nintendo/connect-img.png" alt=""></figure>
+      <p class="top-banner-title">다양한 게임과 이어진다</p>
+      <p class="top-banner-text">amiibo에 대응하는 소프트웨어에서 플레이어로 등장하기도 하고,<br class="banner-br">특별한 아이템을 주는 등<br class="banner-br-l">하나의 amiibo가 열 게임 속에서<br class="banner-br">다양한 체험, 다양한 즐거움으로 이어집니다.</p>
+      <figure class="banner-mario"><img src="../img/nintendo/connect-img.png" alt=""></figure>
     </div>
   </section>
 
@@ -69,52 +88,52 @@
     <div class="info-news-container">
       <article class="news"> 
         <div class="news-img">
-          <figure>
+          <figure class="img-two-1">
             <img src="../img/nintendo/in-game-img.jpg" alt="">
-          </figure>
-          <figure class="img-front-1">
-          <img src="../img/nintendo/in-game-aeak.png" alt="">
+            <img src="../img/nintendo/in-game-aeak.png" alt="">
           </figure>
         </div>
         <div class="news-text">
           <h3 class="splatoon-h3">게임에 등장</h3>
           <p class="splatoon-info">예를 들면 「Splatoon 2」에서는<br><span>당신을 도와주는 역할로 게임에 등장</span></p>
-          <p>amiibo를 아래 화면에 터치하면, 해당 캐릭터가 게임에 등장.<br>
+          <p class="splatoon-text">amiibo를 아래 화면에 터치하면, 해당 캐릭터가 게임에 등장.<br>
             선호하는 특정 장비 및 무기의 조합을 기록할 수 있습니다.<br>
             함께 사진을 찍을 수 있어, 촬영한 사진은 SNS에 업로드할 수 있습니다.<br>
             특정한 장비를 선물로 받을 수 있습니다.</p>
         </div>
       </article>
+
       <article class="news">
         <div class="news-img">
-        <figure>
-          <img src="../img/nintendo/amiibo-yoshi.png" alt="">
-        </figure>
-        <figure class="img-front-2">
-        <img src="../img/nintendo/screenshot-img.png" alt="">
-        </figure>
+          <figure class="img-two-2">
+            <img src="../img/nintendo/amiibo-yoshi.png" alt="">
+            <img src="../img/nintendo/screenshot-img.png" alt="">
+          </figure>
         </div>
         <div class="news-text">
           <h3 class="super-h3">amiibo가 성장</h3>
           <p class="super-info">예를 들면「슈퍼 스매시브라더스 얼티밋」에서는<br><span>더 강하게 육성하여 나만의 캐릭터로</span></p>
-          <p>게임에 등장하는 FP(피규어 파이터)는 스스로 생각해서 배틀한다!<br>
+          <p class="super-text">게임에 등장하는 FP(피규어 파이터)는 스스로 생각해서 배틀한다!<br>
             배틀 중에 성능이나 성격도 성장!<br>
             육성한 캐릭터 정보를 amiibo를 다시 터치하여 기록하면,<br>
             세상에 단 하나뿐인 나만의 amiibo가 됩니다.</p>
         </div>
       </article>
+
     </div>
   </section>
 
   <section class="contect-amiibo">
-    <h3>게임 세계와 이어진다.</h3>
-    <p>Nintendo switch Joy-Con에 amiibo를 터치하기만 해도<br>
-      게임과 이어질 수 있습니다.</p>
-    <figure>
-      <img src="../img/nintendo/amiibo-connect-img--01.png" alt="">
-    </figure>
-    <p>Nintendo switch나 닌텐도 3DS와 이어진다</p>
-    <p>Amiibo를 본체에 터치하는 것만으로도, 대응하는 소프트웨어와 이어져 즐길 수 있습니다.</p>
+    <div class="game-contect">
+      <h3>게임 세계와 이어진다.</h3>
+      <p class="game-contect-p-1">Nintendo switch Joy-Con에 amiibo를 터치하기만 해도<br>
+        게임과 이어질 수 있습니다.</p>
+      <figure class="mario-amii">
+        <img src="../img/nintendo/amiibo-connect-img--01.png" alt="">
+      </figure>
+      <p class="game-contect-p-2">Nintendo switch나<br class="banner-br">닌텐도 3DS와 이어진다</p>
+      <p class="game-contect-p-3">Amiibo를 본체에 터치하는 것만으로도<br class="banner-br">대응하는 소프트웨어와 이어져 즐길 수 있습니다.</p>
+    </div>
     <div class="divice-contect">
       <p>게임기와 연동하려면</p>
     </div>
@@ -124,35 +143,55 @@
           <img src="../img/nintendo/amiibo-modallinks-img01.jpg" alt="">
         </figure>
         <div class="device-title">
-          <div><p>&gt;</p></div>
+          <div class="next"><p>&gt;</span></div>
           <span>Nintendo Switch 패밀리</span>
         </div>
       </div>
-      <div class="3DS">
+      <div class="ds3">
         <figure>
           <img src="../img/nintendo/amiibo-modallinks-img02.jpg" alt="">
         </figure>
         <div class="device-title">
-          <div><p>&gt;</p></div>
+          <div class="next"><p>&gt;</p></div>
           <span>닌텐도 3DS</span>
         </div>
       </div>
     </div>
   </section>
-  <section class="page-link">
-    <div class="page-link-container">
+
+  <section class="page-link-large">
+    <div class="page-link-container-large">
       <a href="#">
         <figure>
+          <img src="../img/nintendo/banner--01.jpg" alt="">
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <img src="../img/nintendo/banner--02.jpg" alt="">
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <img src="../img/nintendo/banner--03.jpg" alt="">
+        </figure>
+      </a>
+    </div>
+  </section>
+  <section class="page-link-small">
+    <div class="page-link-container-small">
+      <a href="#">
+        <fiure class="link-small-img">
           <img src="../img/nintendo/banner-mo--01.jpg" alt="">
         </figure>
       </a>
       <a href="#">
-        <figure>
+        <figure class="link-small-img">
           <img src="../img/nintendo/banner-mo--02.jpg" alt="">
         </figure>
       </a>
       <a href="#">
-        <figure>
+        <figure class="link-small-img">
           <img src="../img/nintendo/banner-mo--03.jpg" alt="">
         </figure>
       </a>
