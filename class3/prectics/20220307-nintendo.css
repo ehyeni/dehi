@@ -367,6 +367,7 @@ ul>.top-a>li::after{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .news{
@@ -692,7 +693,7 @@ footer{
 
   .splatoon-text, .super-text, .splatoon-info, .super-info {
     font-size: 12px;
-    line-height: 20px
+    line-height: 20px;
   }
 
   .news-text>h3{
