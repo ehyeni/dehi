@@ -111,6 +111,7 @@ header{
   top: 0;
   overflow: hidden;
   z-index: 980;
+  transition-duration: 0.5s;
 }
 
 #ham-check:checked ~ .hidden>.hidden-menu{
