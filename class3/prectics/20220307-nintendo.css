@@ -434,7 +434,6 @@ ul>.top-a>li::after{
 
 .contect-amiibo{
   width: 100%;
-  height: 1050px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -451,6 +450,9 @@ ul>.top-a>li::after{
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+.contect-amiibo{
+  padding-bottom: 40px;
+}
 .game-contect>h3{
   font-size: 34px;
   color: var(--green);
@@ -711,10 +713,6 @@ footer{
     border-bottom: 1px solid #dddddd;
   }
 
-  .contect-amiibo{
-    height: 1000px;
-  }
-
   .game-contect>h3{
     font-size: 25px;
     margin-top: 63px;
@@ -743,15 +741,17 @@ footer{
     font-size: 14px;
     line-height: 21px;
   }
-
+  
   .divice-contect>p{
     font-size: 14px;
     font-weight: bold;
   }
-
+  
   .device-container{
+    width: 90%;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
   }
 
   .nintendo-family, .ds3{
@@ -759,6 +759,11 @@ footer{
     flex-direction: column;
     align-items: center;
     border: none;
+  }
+
+  .nintendo-family{
+    padding-bottom: 24px;
+    border-bottom: solid 1px var(--line--gray);
   }
 
   .nintendo-family>figure, .ds3>figure{
@@ -775,6 +780,7 @@ footer{
 
   .page-link-small{
     display: block;
+    border-top: 1px solid var(--line--gray);
   }
 
 }
