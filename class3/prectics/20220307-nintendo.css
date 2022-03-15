@@ -221,7 +221,6 @@ ul>.top-a>li::after{
   margin-top: 7px;
   font-size: 13px;
   content: "▲";
-
 }
 
 .nav-top::after,.nav-line-up::after,.nav-software::after,.nav-qna::after{
