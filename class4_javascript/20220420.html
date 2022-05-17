@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .rect{
+      width: 500px;
+      height: 500px;
+      background-color: rosybrown;
+      margin: 10px auto;
+      opacity: 0;
+    }
+
+    .rotate.show{
+      animation: rotate 1s;
+    }
+
+    .fade-up.show{
+      animation: fade-up 1s;
+    }
+    
+    .show{
+      animation: fade 1s forwards;
+    }
+
+    @keyframes fade {
+      from{
+        background-color: red;
+      }
+      to{
+        background-color: blue;
+      }
+    }
+
+    @keyframes rotate {
+      from{
+        transform: rotate(0);
+        opacity: 0;
+      }
+      to{
+        transform: rotate(360deg);
+        opacity: 1;
+      }
+    }
+
+
+    @keyframes fade-up {
+      from{
+        opacity: 0;
+        transform: translateY(100px);
+      }
+      to{
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <script>
+    window.onload= function(){
+      const obj = document.querySelectorAll('.rect')
+
+      function eff() {
+        // for of문으로 (for(el = 0; el < obj.lenght; el++) 와 같음)
+        for(const el of obj){
+          el.innerHTML = el.offsetTop
+          // if(el.offsetTop > window.scrollY && el.offsetTop < (window.innerHeight + window.scrollY))
+          if(window.innerHeight > el.getBoundingClientRect().top > el.offsetHeight) {
+            el.classList.add('show')
+          }
+        }
+      }
+
+
+      window.addEventListener('scroll', eff)
+    }
+  </script>
+</head>
+<body>
+  <div class="rect rotate">rect1</div>
+  <div class="rect fade-up">rect2</div>
+  <div class="rect fade-down">rect3</div>
+  <div class="rect left-side">rect4</div>
+  <div class="rect right-side">rect5</div>
+  <div class="rect">rect6</div>
+  <div class="rect">rect7</div>
+  <div class="rect">rect8</div>
+  <div class="rect">rect9</div>
+  <div class="rect">rect10</div>
+</body>
+</html>

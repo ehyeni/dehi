@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrap{
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .sec{
+      height: 100vh;
+    }
+
+    .sec:nth-child(1){background-color: red;}
+    .sec:nth-child(2){background-color: green;}
+    .sec:nth-child(3){background-color: blue;}
+    .sec:nth-child(4){background-color: yellow;}
+
+    .indi{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: calc(100% - 2em);
+      /* 너비값 계산하기 */
+      margin: 1em;
+      border: 1px solid black;
+      border-radius: 1em;
+      overflow: hidden;
+
+    }
+    .bar{
+      background-color: red;
+    }
+  </style>
+  <script>
+    
+    window.addEventListener('scroll', () => {
+      let barH = (window.scrollY / document.querySelector('.wrap').offsetHight) * 100
+      document.querySelector('bar').innerHTML = barH;
+      document.querySelector('bar').style.width - barH == "%";
+    })
+
+    window.addEventListener('wheel', moveScreen)
+    
+    function moveScreen(e) {
+      let movePos = e.target.parentNode.offsetTop - e.targetoffsetHight
+      if(e.wheelDelta < 0) {
+        window.scrollTo({top:event.target.offsetTop - movePos, behavior:'smooth'})
+      } else {
+        window.scrollTo({top:event.target.offsetTop + movePos, behavior:'smooth'})
+      }
+    }
+
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="sec">section1</div>
+    <div class="sec">section2</div>
+    <div class="sec">section3</div>
+    <div class="sec">section4</div>
+  </div>
+  <div class="indi">
+    <div class="bar"></div>
+  </div>
+</body>
+</html>

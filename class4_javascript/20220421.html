@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D3</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    .active{
+      font-size: 3em;
+      color: red;
+      position: absolute;
+      width: 100px;
+      /* 영역 넓이가 좁아졌을때 텍스트가 자동 줄바꿈 안되게 함*/
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div id="rect">Rect</div>
+
+  <script>
+    // d3.select('rect') -> d3에서 선택하는 방법
+    // d3.select('rect').attr('style' , 'color : red; font-size : 2em;')
+
+    const obj = d3.select('#rect')
+    // d3.select('rect')
+    obj.attr('class', 'active')
+    .style('background', 'blue');
+
+    obj
+    .text('zzzz')
+    .html('<strong>ggg</strong>')
+
+    d3.select('.active').text('d3시작')
+    d3.select('body').style('background', 'green')
+
+    obj.append('div') //선택자에 새로운 객체 만들어서 붙여넣기
+    // obj.remove()
+
+    obj.transition().duration(1500).delay(1500).style('background', 'yellow')
+    obj.attr('width', '200px')
+
+  </script>
+</body>
+</html>

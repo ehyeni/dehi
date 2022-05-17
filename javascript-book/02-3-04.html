@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>증감 연산자</title>
+</head>
+<body>
+  <script>
+    var num1 = 10;
+    var num2 = 20;
+    var restlt;
+
+    num1--;
+    document.write(num1,"<br>");
+
+    num1++;
+    document.write(num1,"<br>");
+
+    result = num2++;
+    document.write(result,"<br>")
+    // 먼저 변수 num2의 값이 변수 result에 저장되고
+    // (이때 result 값이 20이라고 document.write(result,"<br>") 결과가 먼저 결정됨)
+    // 결과가 나온 후 ++가 작동해서 num2는 21로 저장됨 (num2에 ++ 작동 전에 result 저장)
+
+    result = ++num2;
+    document.write(result,"<br>")
+
+    // 그 상태에서 다시 ++를 앞으로해서 실행시키면 앞에서 result는 20이었어도
+    // num2가 21로 저장되고 끝났기때문에 이 명령문이 num2가 21로 시작하는 것
+    // 21로 시작하며 ++가 앞에 있기 때문에 ++가 작동해서 1만큼 증가한 22가 num2에 저장된 후에
+    // num2가 result에 저장되서 결과가 22로 나옴 (num2에 ++작동 후에 result 저장)
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function chg(e){
+      let car = ['기아', '벤츠', '현대']
+      let bicycle = ['삼천리', '메리다', '따릉이']
+      let etc = ['지하철', '버스', '기차']
+
+      if(e.value == '1') sel = car
+      if(e.value == '2') sel = bicycle
+      if(e.value == '3') sel = etc
+
+      document.getElementById('move2').length = 0;
+
+      for(1=0; i < sel.length; i++){
+        let opt = document.createElement('option');
+        opt.value = sel[i];
+        document.getElementById('move2').appendChild(opt);
+      }
+    }
+  </script>
+</head>
+<body>
+  <select onchange="chg(move)">
+    <option></option>
+    <option value='1'>자동차</option>
+    <option value='2'>자전거</option>
+    <option value='3'>그외</option>
+  </select>
+
+  <select id="move2">
+    <option></option>
+  </select>
+</body>
+</html>

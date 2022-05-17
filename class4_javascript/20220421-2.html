@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>d3</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <svg width="500" hight="500"></svg>
+  <script>
+    const svg = d3.select('svg')
+    const dataset = [100, 75, 155, 35, 25]
+    const colorset = ['red', 'yellow', 'green', 'blue', 'pink']
+
+    for(i = 0; i < dataset.length; i++){
+      svg.append('rect')
+      .attr('width', dataset[i]) 
+      .attr('height', 25)
+      .attr('fill', colorset[i])
+      .attr('y', i * 30)
+    }
+
+  </script>
+</body>
+</html>

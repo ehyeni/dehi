@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>달력만들기</title>
+
+  <style>
+    #cal {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+    }
+
+  </style>
+  <script>
+
+    window.onload = () => {
+
+      console.log(date)
+
+
+      
+      document.querySelector('.next').addEventListener('click',ntxM())
+      
+      function ntxM() {
+        dateM = dateM + 1;
+        rendarCal();
+      }
+      
+      let cal = document.getElementById('cal')
+      
+      function rendarCal() {
+        var date = new Date();
+        var dateY = date.getFullYear();
+        var dateM = date.getMonth();
+        var dateD = date.getDate();
+        var lastD = new Date(dateY, dateM+1, 0).getDate(); 
+        // 달은 1월을 0으로 인식해서 0부터 시작이라 +1을 찍어줘야함
+        var firstD = new Date(dateY, dateM, 1).getDay(); 
+        // 헷갈리게찌만 여긴 1이 더해지면 안됨..
+        
+        cal.innerHTML = '';
+        document.querySelector('.date').innerHTML = `${dateY}년, ${dateM+1}월`;
+        for(i = 1; i<= lastD; i++) {
+          let dv = document.createElement('div');
+          dv.innerHTML = i;
+          dv.classList.add('day')
+          if(i == dateD) {dv.classList.add('today')}
+          // 이름 지정하는게 클래스리스.애드임
+          cal.append(dv)
+        }
+  
+        for(i = 1; i < firstD; i++){
+          let dv = document.createElement('div');
+          dv.innerHTML = '';
+          dv.classList.add('blank')
+          cal.prepend(dv)  
+        }
+      }
+
+      renderCal();
+  
+
+
+    }
+
+  </script>
+</head>
+<body>
+  <button class="prev"><</button>
+  <span id="date"></span>
+  <button class="next">></button>
+  <div id="cal"> </div>
+</body>
+</html>

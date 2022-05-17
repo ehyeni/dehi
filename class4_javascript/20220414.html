@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.onload = function () {
+      let ckall = document.getElementById('ckall')
+      let ckbox = document.getElementsByName('checkboxgroup')
+
+      ckall.addEventListener('click', checkAll)
+
+      function checkAll(){
+        // // 하위박스 모두 체크
+        if(ckall.checked == true){
+          for(i = 0; i < ckbox.length; i++){ 
+            ckbox[i].checked = true;}
+          } else {
+            for(i = 0; i < ckbox.length; i++){
+              ckbox[i].checked = false;
+              }
+          }
+
+          for(i = 0; i < ckbox.length; i++) {
+            ckbox[i].onclick = function() {
+              ckall.checked = false
+            }
+          }
+        }
+    }
+  </script>
+</head>
+<body>
+  
+<input type="checkbox" id="ckall"> <label for="ckall">전체선택</label>
+
+<input type="checkbox" name="checkboxgroup" id="movie"> <label for="movie">영화</label>
+<input type="checkbox" name="checkboxgroup" id="book"> <label for="book">책보기</label>
+<input type="checkbox" name="checkboxgroup" id="music"> <label for="music">음악듣기</label>
+
+</body>
+</html>

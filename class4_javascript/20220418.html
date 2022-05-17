@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    body,p{
+      margin: 0;
+      padding: 0;
+    }
+
+    .modal.active{
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: fade-in 1s forwards;
+    }
+
+    .modal:not(.active){
+      animation: fade-out 1s forwards;
+    }
+
+    .modal{
+      width: 0;
+      height: 0;
+      overflow: hidden;
+
+    }
+
+    .layer{
+      width: 300px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid gray;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+      /* 블러처리를 할 수 있는 필터 속성 */
+      backdrop-filter: blue(2px);
+    }
+
+    .top{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .modal-btn{
+      display: flex;
+    }
+
+    .modal-btn > button{
+      display: block;
+      width: 100%;
+    }
+    .modal:not(.active){
+      background-color: red;
+    }
+
+   @keyframes fade-in{
+      from{
+        opacity: 0;
+      }
+
+      to{
+        opacity: 1;
+      } 
+    }
+
+    @keyframes fade-out{
+      from{
+        opacity: 1;
+      }
+
+      to{
+        opacity: 0;
+        z-index: -1;
+      } 
+    }
+
+  </style>
+
+  <script>
+    window.onload = function () {
+      let modal = document.querySelector('.modal')
+      let bntClose = document.querySelector('.btn-close');
+      let bntOpen = document.querySelector('.btn-open');
+
+      let bntOk = document.querySelector('.btn-ok');
+
+
+      bntClose.addEventListener('click' , modalOff);
+      bntOpen.addEventListener('click' , modalOn);
+      bntOk.addEventListener('click' , okClick);
+      // modal.addEventListener('click' , modalOff);
+
+      modal.addEventListener('cilck', (e) => {
+        if(e.target.classList.contains('modal')){
+          modalOff();
+        }
+      });
+
+      
+      function modalOn() {
+        // modal.style.display = 'flex';
+        modal.classList.add('active')
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function modalOff() {
+        // modal.style.display = 'none';
+        modal.classList.remove('active')
+        // modal.classList.add('fade')
+        document.body.style.overflow = 'auto';
+      }
+
+      function okClick() {
+        // 확인 눌렀을때 처리할 코드
+        modalOff();
+      }
+
+      window.addEventListener('keydown', (e) => {
+        if(e.keyCode == 27) {
+          modalOff();
+        }
+      })
+
+    }
+
+    // 여백 누르면 꺼지는것 해보기
+
+  </script>
+</head>
+<body>
+  <button type="button" class="btn-open">open</button>
+  <div class="modal active">
+    <div class="layer">
+      <div class="top">
+        <p class="title">madal</p>
+        <button type="button" class="btn-close">X</button>
+      </div><hr>
+      <div class="text">내용</div>
+      <div class="modal-btn">
+        <button type="button" class="btn-cencel">취소</button>
+        <button type="button" class="btn-ok">확인</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
