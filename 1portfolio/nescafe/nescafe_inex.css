@@ -1,0 +1,45 @@
+.top_logo_area{
+  width: 80%;
+  height: 162px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 90px;
+  height: 90px;
+}
+
+.logo>img{
+  width: 90px;
+  height: 90px;
+}
+
+.name{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}
+
+.side_icon{
+  display: flex;
+  justify-content: end;
+}
+
+.wishlist{
+  background: url(../nescafe/img/icon.png) no-repeat -634px -141px;
+  width: 21px;
+	height: 24px;
+}
+
+.myhome{
+  background: url('../nescafe/img/icon.png') no-repeat -672px -141px;
+	width: 22px;
+	height: 24px;
+}
+
