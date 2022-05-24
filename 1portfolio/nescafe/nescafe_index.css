@@ -1,16 +1,40 @@
-header{
-  width: 80%;
+:root{
+  --main-rad:#B7373A;
+  --main-dark-brown:#50261F;
+  --main-brown: #AB7750;
+  --sub-gray: #D4D4D4;
+}
+
+
+header .header_container{
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; 
+}
+
+header{
+  position: relative;
+}
+
+.header_container{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.header_box{
+  width: 100%;
+  height:230px;
 }
 
 .top_logo_area{
-  width: 80%;
+  width: 100%;
   height: 162px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -32,9 +56,16 @@ header{
   overflow: hidden;
 }
 
+.area{
+  width: 55px;
+  height: 24;
+}
+
 .side_icon{
+  width: 55px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+  gap: 12px;
 }
 
 .wishlist{
@@ -58,37 +89,111 @@ header{
   
 }
 
-.header_nav ul{
+.main_menu{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 30px;
+  margin-right: 24px;
+  width: 150px;
 }
 
 .header_nav:hover{
-  height: 250px;
+  width: 100%;
+  height: 300px;
+  background-color: white;
   transition-duration: 0.5s;
 }
 
-.header_nav ul:last-child{
+.main_menu:last-child{
   margin: 0;
 }
 
-.header_nav li{
+.category{
+  display: flex;
+}
+
+.category a{
   line-height: 36px;
   font-size: 14px;
+  color: var(--main-brown);
 }
 
-.header_nav li:hover{
+
+.category>a:hover{
   font-weight: bold;
+  color: var(--main-dark-brown);
 }
 
-.header_nav li:first-child{
+.category.top{
   font-weight: bold;
   margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.category.top > a {
+  color: var(--main-dark-brown);
 }
 
 .left_menu_back{
   display: none;
 }
 
+.main_banner{
+  width: 100%;
+  height: 700px;
+}
+
+.main_banner>ul{
+  display: flex;
+  justify-content: center;
+}
+
+.banner_img1{
+  width: 1200px;
+  height: 600px;
+  border-radius: 45px;
+  background: url(../nescafe/img/banner\(1\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.best_product_container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.best_title{
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--main-dark-brown);
+}
+
+.product_dol, .product_sb {
+  width: 280px;
+  height: 400px;
+  border: 1px solid var(--sub-gray);
+  border-radius: 45px;
+}
+
+.product_name, .product_price{
+  text-align: center;
+}
+
+.best_product button{
+  height: 32px;
+  width: 86px;
+  border-radius: 16px;
+}
+
+.cart{
+  border: 2px solid var(--main-dark-brown);
+  background-color: white;
+  color: var(--main-dark-brown);
+}
+
+.buy_button{
+  background-color: var(--main-dark-brown);
+  color: white;
+}
